@@ -1,0 +1,31 @@
+[gd_scene format=2]
+
+[node name="Neto" type="Node2D"]
+position = Vector2( -287, -171 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Fondito" type="Panel" parent="."]
+margin_left = 23.0
+margin_top = 16.0
+margin_right = 177.0
+margin_bottom = 70.0
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Valor" type="Label" parent="."]
+margin_left = 22.0
+margin_top = 17.0
+margin_right = 100.0
+margin_bottom = 43.0
+rect_scale = Vector2( 2, 2 )
+text = "$0"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}

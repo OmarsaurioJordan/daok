@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/guinxu_coronado.wav-e6dc9bc0c18102a1eb8c13d2cc48ac71.sample"
+
+[deps]
+
+source_file="res://sounds/guinxu_coronado.wav"
+dest_files=[ "res://.import/guinxu_coronado.wav-e6dc9bc0c18102a1eb8c13d2cc48ac71.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=true
+force/max_rate=true
+force/max_rate_hz=16000.0
+edit/trim=false
+edit/normalize=true
+edit/loop=false
+compress/mode=0

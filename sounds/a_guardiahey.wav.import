@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/a_guardiahey.wav-d7cc0f957665e6789b9e352fef5361f7.sample"
+
+[deps]
+
+source_file="res://sounds/a_guardiahey.wav"
+dest_files=[ "res://.import/a_guardiahey.wav-d7cc0f957665e6789b9e352fef5361f7.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=true
+force/max_rate=true
+force/max_rate_hz=16000.0
+edit/trim=false
+edit/normalize=true
+edit/loop=false
+compress/mode=0

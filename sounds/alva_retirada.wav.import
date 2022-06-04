@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/alva_retirada.wav-8b4bec5a2dbb6ad0a316c1a6b369fc50.sample"
+
+[deps]
+
+source_file="res://sounds/alva_retirada.wav"
+dest_files=[ "res://.import/alva_retirada.wav-8b4bec5a2dbb6ad0a316c1a6b369fc50.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=true
+force/max_rate=true
+force/max_rate_hz=16000.0
+edit/trim=false
+edit/normalize=true
+edit/loop=false
+compress/mode=0

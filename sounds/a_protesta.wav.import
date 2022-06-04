@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/a_protesta.wav-bf759e5c4410c57f205e1177ef4c159e.sample"
+
+[deps]
+
+source_file="res://sounds/a_protesta.wav"
+dest_files=[ "res://.import/a_protesta.wav-bf759e5c4410c57f205e1177ef4c159e.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=true
+force/max_rate=true
+force/max_rate_hz=16000.0
+edit/trim=false
+edit/normalize=true
+edit/loop=false
+compress/mode=0

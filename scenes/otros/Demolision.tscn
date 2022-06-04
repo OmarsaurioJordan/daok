@@ -1,0 +1,69 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://scripts/HumoExplo.gd" type="Script" id=1]
+[ext_resource path="res://sprites/d_particula_humo.png" type="Texture" id=2]
+
+[sub_resource type="Gradient" id=10]
+offsets = PoolRealArray( 0, 0.2, 0.8, 1 )
+colors = PoolColorArray( 1, 1, 1, 0.156863, 1, 1, 1, 0.784314, 1, 1, 1, 0.784314, 1, 1, 1, 0.0784314 )
+
+[sub_resource type="GradientTexture" id=8]
+gradient = SubResource( 10 )
+width = 512
+
+[sub_resource type="Curve" id=11]
+bake_resolution = 20
+_data = [ Vector2( 0, 0.472727 ), 0.0, 0.0, 0, 0, Vector2( 1, 1 ), 0.0, 0.0, 0, 0 ]
+
+[sub_resource type="CurveTexture" id=9]
+width = 512
+curve = SubResource( 11 )
+
+[sub_resource type="ParticlesMaterial" id=12]
+lifetime_randomness = 0.2
+emission_shape = 1
+emission_sphere_radius = 10.0
+flag_disable_z = true
+direction = Vector3( 0, -1, 0 )
+spread = 15.0
+gravity = Vector3( 0, 0, 0 )
+initial_velocity = 24.0
+initial_velocity_random = 0.2
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+damping = 3.0
+angle = 360.0
+angle_random = 1.0
+scale = 1.8
+scale_random = 0.2
+scale_curve = SubResource( 9 )
+color_ramp = SubResource( 8 )
+
+[node name="Demolision" type="Node2D" groups=["imagen"]]
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Polvo" type="Particles2D" parent="."]
+self_modulate = Color( 0.94902, 0.709804, 0.137255, 1 )
+scale = Vector2( 1.5, 1.5 )
+emitting = false
+amount = 15
+lifetime = 10.0
+one_shot = true
+preprocess = 1.0
+explosiveness = 0.5
+visibility_rect = Rect2( -75, -170, 150, 180 )
+process_material = SubResource( 12 )
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Fin" type="Timer" parent="."]
+wait_time = 20.0
+one_shot = true
+autostart = true
+
+[connection signal="timeout" from="Fin" to="." method="_on_Fin_timeout"]

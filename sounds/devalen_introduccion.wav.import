@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/devalen_introduccion.wav-e283b1ae418f7ff459477ecaa20c9c8a.sample"
+
+[deps]
+
+source_file="res://sounds/devalen_introduccion.wav"
+dest_files=[ "res://.import/devalen_introduccion.wav-e283b1ae418f7ff459477ecaa20c9c8a.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=true
+force/max_rate=true
+force/max_rate_hz=16000.0
+edit/trim=false
+edit/normalize=true
+edit/loop=false
+compress/mode=0

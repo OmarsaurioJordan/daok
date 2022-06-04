@@ -1,0 +1,94 @@
+DAOK by Omwekiatl:
+.
+Tareas:
+.
+- 
+.
+ColiLayers:
+.
+- 1: solidos
+- 2: moviles
+- 3: proyectiles
+- 4: buildings
+- 5: decorados
+- 6: reserva
+- 7: aereo
+- 8: calles
+- 9: extra anti-calles
+- 10: cadaveres
+- 11: monstruo para perseguir
+- 12: monstruo para huir
+- 13: diamantes
+- 14: sdev (para charlar)
+.
+Prioridades:
+.
+- seguridad: baja al ver enemys
+- energia: debe dormir to reload
+- salud: baja al azar hasta sick
+- comida: si baja mucho hambre
+- diversion: varias cosas up
+- trabajo: dinero acumulado
+- social: necesidad de hablar
+A fisico: deporte o sino baja
+B intelecto: leer o sino baja
+- descanso hippie y etc
+.
+Movimientos:
+.
+- suelo: camina por ahi
+- aire: vuela por ahi
+- asomado: en ventana de build
+- interno: camina in the build
+- estatico: parado en build
+.
+Audios:
+.
+- devalen orden de venir a punto
+- devalen GUI boton llamar nuevo ok
+- devalen construir centro urbano
+- devalen introduccion
+- diamante hola
+- diamante charla
+- diamante guardia ey
+- diamante hulle asustado
+- diamante tos
+- diamante muerte hambre
+- diamante muerte enfermo
+- diamante muerte violenta
+- diamante protesta
+- sdev inicia invasion
+- sdev hola new
+- sdev charla
+- sdev muere
+- sdev robo
+- sdev encaleta
+- sdev retirada
+- guinxu inicia invasion
+- guinxu hola
+- guinxu coronado
+- guinxu muere
+- guinxu retirada 
+- jasperdev hola
+- jasperdev bomba
+- jasperdev muere
+- alva inicia invasion
+- alva destroy edificacion
+- alva muere
+- alva derrotado
+- alva retirada
+- pandemia jlmp inicio
+- pandemia jlpm fin
+.
+Musica:
+.
+- (global) TheoTer - Egypt Music
+- PureDesignGirl - Pop Music
+- Farcus Holton - Almostsalsa
+- Oymaldonado - Salsa Loop Intro 110 bpm
+- Jibey - Rock Music
+- Migfus20 - Rock Music
+- Mammo - Electronic
+- Lena Orsa - Passion Tango
+- DaveJf - Free Music
+.

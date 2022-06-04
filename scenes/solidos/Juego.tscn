@@ -1,0 +1,389 @@
+[gd_scene load_steps=18 format=2]
+
+[ext_resource path="res://sprites/d_daok_piezas_strip13.png" type="Texture" id=1]
+[ext_resource path="res://sprites/d_particula_explosion.png" type="Texture" id=2]
+[ext_resource path="res://sprites/d_daok_baldozas_strip4.png" type="Texture" id=3]
+[ext_resource path="res://sprites/d_daok_edificios_strip25.png" type="Texture" id=4]
+[ext_resource path="res://sprites/d_daok_cosas_strip10.png" type="Texture" id=5]
+[ext_resource path="res://scenes/otros/Actividad.tscn" type="PackedScene" id=6]
+[ext_resource path="res://scenes/otros/Puerta.tscn" type="PackedScene" id=7]
+[ext_resource path="res://scripts/Juego.gd" type="Script" id=8]
+[ext_resource path="res://sounds/a_juego.wav" type="AudioStream" id=9]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 127, 50.5 )
+
+[sub_resource type="Gradient" id=10]
+offsets = PoolRealArray( 0, 0.333, 0.666, 1 )
+colors = PoolColorArray( 1, 1, 1, 0.156863, 1, 1, 1, 0.784314, 1, 1, 1, 0.784314, 1, 1, 1, 0.0784314 )
+
+[sub_resource type="GradientTexture" id=13]
+gradient = SubResource( 10 )
+width = 512
+
+[sub_resource type="Curve" id=11]
+bake_resolution = 20
+_data = [ Vector2( 0, 0.288636 ), 0.0, 0.0, 0, 0, Vector2( 1, 1 ), 0.0, 0.0, 0, 0 ]
+
+[sub_resource type="CurveTexture" id=14]
+width = 512
+curve = SubResource( 11 )
+
+[sub_resource type="ParticlesMaterial" id=12]
+lifetime_randomness = 0.2
+flag_disable_z = true
+direction = Vector3( -1, -1, 0 )
+gravity = Vector3( 0, 0, 0 )
+initial_velocity = 25.0
+initial_velocity_random = 0.2
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+angle = 360.0
+angle_random = 1.0
+scale_random = 0.2
+scale_curve = SubResource( 14 )
+color_ramp = SubResource( 13 )
+
+[sub_resource type="Animation" id=15]
+resource_name = "Go"
+length = 2.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Imagen/Salon/Sala/Cancha1:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5, 2 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ), Vector2( 1.2, 1 ), Vector2( 1.2, 1.1 ), Vector2( 1, 1.1 ), Vector2( 1, 1 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Imagen/Salon/Sala/Cancha2:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5, 2 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1.2, 1.1 ), Vector2( 1.2, 1 ), Vector2( 1, 1 ), Vector2( 1, 1.1 ), Vector2( 1.2, 1.1 ) ]
+}
+
+[sub_resource type="Animation" id=16]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("Imagen/Salon/Sala/Cancha1:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Imagen/Salon/Sala/Cancha2:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ) ]
+}
+
+[node name="Juego" type="Node2D" groups=["ediJuego", "ediffice", "porton"]]
+script = ExtResource( 8 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Solido" type="Area2D" parent="."]
+position = Vector2( 4, 0 )
+collision_layer = 9
+collision_mask = 0
+input_pickable = false
+monitoring = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Coli" type="CollisionShape2D" parent="Solido"]
+position = Vector2( -1, 5.5 )
+shape = SubResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Imagen" type="Node2D" parent="." groups=["imagen"]]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Suelo" type="Sprite" parent="Imagen"]
+position = Vector2( 11, 0 )
+texture = ExtResource( 3 )
+hframes = 4
+frame = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Fondo" type="Sprite" parent="Imagen"]
+texture = ExtResource( 4 )
+centered = false
+offset = Vector2( -149, -185 )
+hframes = 25
+frame = 13
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Marcador1" type="Label" parent="Imagen"]
+margin_left = -17.0
+margin_top = -100.0
+margin_bottom = -78.0
+rect_scale = Vector2( 1.5, 1.5 )
+text = "0"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Marcador2" type="Label" parent="Imagen"]
+margin_left = 7.0
+margin_top = -101.0
+margin_right = 24.0
+margin_bottom = -79.0
+rect_scale = Vector2( 1.5, 1.5 )
+text = "0"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Salon" type="Node2D" parent="Imagen"]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Sala1" type="Node2D" parent="Imagen/Salon"]
+position = Vector2( -81, -25 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Sala2" type="Node2D" parent="Imagen/Salon"]
+position = Vector2( 87, 31 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Sala" type="YSort" parent="Imagen/Salon" groups=["interior"]]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Cancha1" type="Sprite" parent="Imagen/Salon/Sala"]
+position = Vector2( -83, -1 )
+texture = ExtResource( 1 )
+centered = false
+offset = Vector2( -58, -113 )
+hframes = 13
+frame = 6
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Fiesta" type="Particles2D" parent="Imagen/Salon/Sala/Cancha1"]
+self_modulate = Color( 0.207843, 1, 0.239216, 1 )
+position = Vector2( 1, -48 )
+scale = Vector2( -1, 1 )
+emitting = false
+amount = 10
+lifetime = 5.0
+one_shot = true
+explosiveness = 0.5
+visibility_rect = Rect2( -150, -150, 200, 200 )
+local_coords = false
+process_material = SubResource( 12 )
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_lock_": true,
+"_editor_description_": ""
+}
+
+[node name="Cancha2" type="Sprite" parent="Imagen/Salon/Sala"]
+position = Vector2( 83, -1 )
+texture = ExtResource( 1 )
+centered = false
+offset = Vector2( -58, -113 )
+hframes = 13
+frame = 6
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Fiesta" type="Particles2D" parent="Imagen/Salon/Sala/Cancha2"]
+self_modulate = Color( 0.207843, 1, 0.239216, 1 )
+position = Vector2( 1, -48 )
+emitting = false
+amount = 10
+lifetime = 5.0
+one_shot = true
+explosiveness = 0.5
+visibility_rect = Rect2( -150, -150, 200, 200 )
+local_coords = false
+process_material = SubResource( 12 )
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_lock_": true,
+"_editor_description_": ""
+}
+
+[node name="Balon" type="Sprite" parent="Imagen/Salon/Sala"]
+texture = ExtResource( 5 )
+centered = false
+offset = Vector2( -23, -46 )
+hframes = 10
+frame = 1
+__meta__ = {
+"_edit_lock_": true,
+"_editor_description_": ""
+}
+
+[node name="Frente" type="Sprite" parent="Imagen"]
+texture = ExtResource( 4 )
+centered = false
+offset = Vector2( -149, -185 )
+hframes = 25
+frame = 12
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Actividad" parent="Imagen" instance=ExtResource( 6 )]
+
+[node name="Fin" type="Node2D" parent="."]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Fin1" type="Node2D" parent="Fin"]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Fin2" type="Node2D" parent="Fin"]
+position = Vector2( -21, -32 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Fin3" type="Node2D" parent="Fin"]
+position = Vector2( -59, -37 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Fin4" type="Node2D" parent="Fin"]
+position = Vector2( -103, -26 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Fin5" type="Node2D" parent="Fin"]
+position = Vector2( -101, 17 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Fin6" type="Node2D" parent="Fin"]
+position = Vector2( -65, 38 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Fin7" type="Node2D" parent="Fin"]
+position = Vector2( -22, 39 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Fin8" type="Node2D" parent="Fin"]
+position = Vector2( 30, 38 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Fin9" type="Node2D" parent="Fin"]
+position = Vector2( 82, 36 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Fin10" type="Node2D" parent="Fin"]
+position = Vector2( 114, 17 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Fin11" type="Node2D" parent="Fin"]
+position = Vector2( 113, -25 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Fin12" type="Node2D" parent="Fin"]
+position = Vector2( 75, -42 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Fin13" type="Node2D" parent="Fin"]
+position = Vector2( 33, -36 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Puerta" parent="." instance=ExtResource( 7 )]
+position = Vector2( 65, 61 )
+
+[node name="Arbitro" type="Timer" parent="."]
+one_shot = true
+
+[node name="PoneSombra" type="Timer" parent="."]
+one_shot = true
+autostart = true
+
+[node name="Anima" type="AnimationPlayer" parent="."]
+anims/Go = SubResource( 15 )
+anims/RESET = SubResource( 16 )
+
+[node name="Logistica" type="Timer" parent="."]
+one_shot = true
+
+[node name="Sonido" type="AudioStreamPlayer2D" parent="." groups=["sonido"]]
+stream = ExtResource( 9 )
+volume_db = -9.0
+bus = "BusEfectos"
+__meta__ = {
+"_edit_lock_": true
+}
+
+[connection signal="toggled" from="Imagen/Actividad" to="." method="_on_Actividad_toggled"]
+[connection signal="timeout" from="Arbitro" to="." method="_on_Arbitro_timeout"]
+[connection signal="timeout" from="PoneSombra" to="." method="_on_PoneSombra_timeout"]
+[connection signal="timeout" from="Logistica" to="." method="_on_Logistica_timeout"]

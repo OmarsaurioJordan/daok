@@ -1,0 +1,118 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://scripts/Dinamita.gd" type="Script" id=1]
+[ext_resource path="res://scenes/otros/ValueEtiqueta.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/otros/NetoValue.tscn" type="PackedScene" id=3]
+[ext_resource path="res://sprites/d_daok_objetos_strip13.png" type="Texture" id=4]
+
+[sub_resource type="CircleShape2D" id=1]
+radius = 51.1957
+
+[node name="Dinamita" type="Node2D"]
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Extallido" type="Area2D" parent="."]
+collision_layer = 0
+input_pickable = false
+monitorable = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Coli" type="CollisionShape2D" parent="Extallido"]
+shape = SubResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Neto" parent="." instance=ExtResource( 3 )]
+position = Vector2( -297, -186 )
+
+[node name="Imagen" type="Node2D" parent="." groups=["imagen"]]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Bomba" type="Sprite" parent="Imagen"]
+position = Vector2( -26, 74 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 4 )
+centered = false
+offset = Vector2( -63, -112 )
+hframes = 13
+frame = 5
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Value" parent="." instance=ExtResource( 2 )]
+visible = true
+position = Vector2( -7, -40 )
+
+[node name="Espera" type="Timer" parent="."]
+wait_time = 0.5
+one_shot = true
+
+[node name="Fin" type="Node2D" parent="."]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Fin1" type="Node2D" parent="Fin"]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Fin2" type="Node2D" parent="Fin"]
+position = Vector2( -37, -68 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Fin3" type="Node2D" parent="Fin"]
+position = Vector2( -69, -33 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Fin4" type="Node2D" parent="Fin"]
+position = Vector2( -69, 24 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Fin5" type="Node2D" parent="Fin"]
+position = Vector2( -31, 51 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Fin6" type="Node2D" parent="Fin"]
+position = Vector2( 30, 52 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Fin7" type="Node2D" parent="Fin"]
+position = Vector2( 64, 25 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Fin8" type="Node2D" parent="Fin"]
+position = Vector2( 65, -31 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Fin9" type="Node2D" parent="Fin"]
+position = Vector2( 41, -64 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[connection signal="area_entered" from="Extallido" to="." method="_on_Construccion_area_entered"]
+[connection signal="area_exited" from="Extallido" to="." method="_on_Construccion_area_exited"]

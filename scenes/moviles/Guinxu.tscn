@@ -1,0 +1,569 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://sounds/guinxu_hola.wav" type="AudioStream" id=1]
+[ext_resource path="res://scripts/Guinxu.gd" type="Script" id=2]
+[ext_resource path="res://sprites/d_daok_entes_strip15.png" type="Texture" id=3]
+[ext_resource path="res://sounds/guinxu_coronado.wav" type="AudioStream" id=4]
+
+[sub_resource type="CircleShape2D" id=1]
+
+[sub_resource type="CircleShape2D" id=2]
+
+[sub_resource type="CircleShape2D" id=6]
+radius = 129.769
+
+[sub_resource type="Animation" id=3]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("Imagen/Suelo/Cuerpo:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 0, -3 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Imagen/Suelo/Cuerpo/Corona:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Imagen/Suelo/PieL:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Imagen/Suelo/PieR:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Imagen/Aire/Cuerpo:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 0, -3 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("Imagen/Aire/Cuerpo/Globo:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1, -52 ) ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("Imagen/Aire/PieL:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 4, 2 ) ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("Imagen/Aire/PieR:position")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -3, -1 ) ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("Imagen/Aire/Cuerpo/Globo/Corona:position")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -1, 11 ) ]
+}
+
+[sub_resource type="Animation" id=4]
+resource_name = "idle"
+length = 2.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Imagen/Suelo/Cuerpo:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5, 2 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, -3 ), Vector2( 0, 0 ), Vector2( 0, 3 ), Vector2( 0, 0 ), Vector2( 0, -3 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Imagen/Suelo/Cuerpo/Corona:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5, 2 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( 0, -3 ), Vector2( 0, 0 ), Vector2( 0, 3 ), Vector2( 0, 0 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Imagen/Suelo/PieL:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( 0, 0 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Imagen/Suelo/PieR:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( 0, 0 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Imagen/Aire/Cuerpo:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5, 2 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, -3 ), Vector2( 0, 0 ), Vector2( 0, 3 ), Vector2( 0, 0 ), Vector2( 0, -3 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("Imagen/Aire/Cuerpo/Globo:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5, 2 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1, -52 ), Vector2( 1, -55 ), Vector2( 1, -52 ), Vector2( 1, -49 ), Vector2( 1, -52 ) ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("Imagen/Aire/PieL:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0.5, 1.5, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 4, 2 ), Vector2( 4, -4 ), Vector2( 4, -1 ) ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("Imagen/Aire/PieR:position")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5, 2 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( -3, -1 ), Vector2( -3, 2 ), Vector2( -3, -1 ), Vector2( -3, -4 ), Vector2( -3, -1 ) ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("Imagen/Aire/Cuerpo/Globo/Corona:position")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5, 2 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( -1, 11 ), Vector2( -1, 8 ), Vector2( -1, 5 ), Vector2( -1, 8 ), Vector2( -1, 11 ) ]
+}
+
+[sub_resource type="Animation" id=5]
+resource_name = "walk"
+length = 2.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Imagen/Suelo/Cuerpo:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5, 2 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, -3 ), Vector2( 0, 0 ), Vector2( 0, 3 ), Vector2( 0, 0 ), Vector2( 0, -3 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Imagen/Suelo/Cuerpo/Corona:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5, 2 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( 0, -3 ), Vector2( 0, 0 ), Vector2( 0, 3 ), Vector2( 0, 0 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Imagen/Suelo/PieL:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5, 2 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( 0, -6 ), Vector2( 0, 0 ), Vector2( 0, -6 ), Vector2( 0, 0 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Imagen/Suelo/PieR:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5, 2 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, -6 ), Vector2( 0, 0 ), Vector2( 0, -6 ), Vector2( 0, 0 ), Vector2( 0, -6 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Imagen/Aire/Cuerpo:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5, 2 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, -3 ), Vector2( 0, 0 ), Vector2( 0, 3 ), Vector2( 0, 0 ), Vector2( 0, -3 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("Imagen/Aire/Cuerpo/Globo:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5, 2 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1, -52 ), Vector2( 1, -55 ), Vector2( 1, -52 ), Vector2( 1, -49 ), Vector2( 1, -52 ) ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("Imagen/Aire/PieL:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0.5, 1.5, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 4, 2 ), Vector2( 4, -4 ), Vector2( 4, -1 ) ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("Imagen/Aire/PieR:position")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5, 2 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( -3, -1 ), Vector2( -3, 2 ), Vector2( -3, -1 ), Vector2( -3, -4 ), Vector2( -3, -1 ) ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("Imagen/Aire/Cuerpo/Globo/Corona:position")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5, 2 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( -1, 11 ), Vector2( -1, 8 ), Vector2( -1, 5 ), Vector2( -1, 8 ), Vector2( -1, 11 ) ]
+}
+
+[node name="Guinxu" type="Node2D" groups=["enemigo", "guinxu", "monster", "movil"]]
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Movil" type="Area2D" parent="."]
+collision_layer = 3074
+collision_mask = 3
+input_pickable = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Coli" type="CollisionShape2D" parent="Movil"]
+shape = SubResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Aereo" type="Area2D" parent="."]
+collision_layer = 64
+collision_mask = 64
+input_pickable = false
+monitoring = false
+monitorable = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Coli" type="CollisionShape2D" parent="Aereo"]
+shape = SubResource( 2 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Vigia" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 4096
+monitorable = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Coli" type="CollisionShape2D" parent="Vigia"]
+shape = SubResource( 6 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Imagen" type="Node2D" parent="." groups=["imagen"]]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Suelo" type="Node2D" parent="Imagen"]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="PieL" type="Sprite" parent="Imagen/Suelo"]
+texture = ExtResource( 3 )
+centered = false
+offset = Vector2( -58, -98 )
+hframes = 15
+frame = 9
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="PieR" type="Sprite" parent="Imagen/Suelo"]
+texture = ExtResource( 3 )
+centered = false
+offset = Vector2( -58, -98 )
+hframes = 15
+frame = 10
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Cuerpo" type="Sprite" parent="Imagen/Suelo"]
+position = Vector2( 0, -3 )
+texture = ExtResource( 3 )
+centered = false
+offset = Vector2( -58, -98 )
+hframes = 15
+frame = 8
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Corona" type="Sprite" parent="Imagen/Suelo/Cuerpo"]
+visible = false
+texture = ExtResource( 3 )
+centered = false
+offset = Vector2( -58, -98 )
+hframes = 15
+frame = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Aire" type="Node2D" parent="Imagen"]
+visible = false
+position = Vector2( -1, -1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="PieL" type="Sprite" parent="Imagen/Aire"]
+position = Vector2( 4, 2 )
+texture = ExtResource( 3 )
+centered = false
+offset = Vector2( -58, -98 )
+hframes = 15
+frame = 9
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="PieR" type="Sprite" parent="Imagen/Aire"]
+position = Vector2( -3, -1 )
+texture = ExtResource( 3 )
+centered = false
+offset = Vector2( -58, -98 )
+hframes = 15
+frame = 10
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Cuerpo" type="Sprite" parent="Imagen/Aire"]
+position = Vector2( 0, -3 )
+texture = ExtResource( 3 )
+centered = false
+offset = Vector2( -58, -98 )
+hframes = 15
+frame = 8
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Globo" type="Sprite" parent="Imagen/Aire/Cuerpo"]
+position = Vector2( 1, -52 )
+texture = ExtResource( 3 )
+centered = false
+offset = Vector2( -58, -98 )
+hframes = 15
+frame = 14
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Corona" type="Sprite" parent="Imagen/Aire/Cuerpo/Globo"]
+visible = false
+position = Vector2( -1, 11 )
+texture = ExtResource( 3 )
+centered = false
+offset = Vector2( -58, -98 )
+hframes = 15
+frame = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Altura" type="Node2D" parent="Imagen"]
+position = Vector2( 0, -83 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Ray" type="RayCast2D" parent="."]
+cast_to = Vector2( 0, 0 )
+collision_mask = 8
+collide_with_areas = true
+collide_with_bodies = false
+
+[node name="Anima" type="AnimationPlayer" parent="."]
+anims/RESET = SubResource( 3 )
+anims/idle = SubResource( 4 )
+anims/walk = SubResource( 5 )
+
+[node name="EsquiveSocial" type="Timer" parent="."]
+one_shot = true
+
+[node name="Errar" type="Timer" parent="."]
+one_shot = true
+
+[node name="Disparador" type="Timer" parent="."]
+one_shot = true
+
+[node name="Correccion" type="Timer" parent="."]
+one_shot = true
+
+[node name="SCorona" type="AudioStreamPlayer2D" parent="." groups=["sonido"]]
+stream = ExtResource( 4 )
+bus = "BusEfectos"
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="SHola" type="AudioStreamPlayer2D" parent="." groups=["sonido"]]
+stream = ExtResource( 1 )
+bus = "BusEfectos"
+__meta__ = {
+"_edit_lock_": true
+}
+
+[connection signal="area_entered" from="Movil" to="." method="_on_Movil_area_entered"]
+[connection signal="area_exited" from="Movil" to="." method="_on_Movil_area_exited"]
+[connection signal="area_entered" from="Aereo" to="." method="_on_Aereo_area_entered"]
+[connection signal="area_exited" from="Aereo" to="." method="_on_Aereo_area_exited"]
+[connection signal="area_entered" from="Vigia" to="." method="_on_Vigia_area_entered"]
+[connection signal="area_exited" from="Vigia" to="." method="_on_Vigia_area_exited"]
+[connection signal="timeout" from="EsquiveSocial" to="." method="_on_EsquiveSocial_timeout"]
+[connection signal="timeout" from="Errar" to="." method="_on_Errar_timeout"]
+[connection signal="timeout" from="Disparador" to="." method="_on_Disparador_timeout"]
+[connection signal="timeout" from="Correccion" to="." method="_on_Correccion_timeout"]

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/mu_davejf_freemusic.wav-2ab1e3d360434e9040f1e13a5fb4846e.sample"
+
+[deps]
+
+source_file="res://sounds/mu_davejf_freemusic.wav"
+dest_files=[ "res://.import/mu_davejf_freemusic.wav-2ab1e3d360434e9040f1e13a5fb4846e.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=true
+force/max_rate=true
+force/max_rate_hz=16000.0
+edit/trim=false
+edit/normalize=true
+edit/loop=false
+compress/mode=0

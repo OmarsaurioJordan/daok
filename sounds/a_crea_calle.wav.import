@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/a_crea_calle.wav-ccecd16659442913653171a4a02a37dc.sample"
+
+[deps]
+
+source_file="res://sounds/a_crea_calle.wav"
+dest_files=[ "res://.import/a_crea_calle.wav-ccecd16659442913653171a4a02a37dc.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=true
+force/max_rate=true
+force/max_rate_hz=16000.0
+edit/trim=false
+edit/normalize=true
+edit/loop=false
+compress/mode=0

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/sdev_muere.wav-b406ba3ca65d1b7b71795a8ef5af8c92.sample"
+
+[deps]
+
+source_file="res://sounds/sdev_muere.wav"
+dest_files=[ "res://.import/sdev_muere.wav-b406ba3ca65d1b7b71795a8ef5af8c92.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=true
+force/max_rate=true
+force/max_rate_hz=16000.0
+edit/trim=false
+edit/normalize=true
+edit/loop=false
+compress/mode=0

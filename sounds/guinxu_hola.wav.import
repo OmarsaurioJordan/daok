@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/guinxu_hola.wav-b57cbb7167952fcaa63d715632c373f5.sample"
+
+[deps]
+
+source_file="res://sounds/guinxu_hola.wav"
+dest_files=[ "res://.import/guinxu_hola.wav-b57cbb7167952fcaa63d715632c373f5.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=true
+force/max_rate=true
+force/max_rate_hz=16000.0
+edit/trim=false
+edit/normalize=true
+edit/loop=false
+compress/mode=0

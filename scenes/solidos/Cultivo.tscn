@@ -1,0 +1,381 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://sprites/d_daok_piezas_strip13.png" type="Texture" id=1]
+[ext_resource path="res://sprites/d_daok_cosas_strip10.png" type="Texture" id=2]
+[ext_resource path="res://sprites/d_daok_baldozas_strip4.png" type="Texture" id=3]
+[ext_resource path="res://sprites/d_daok_edificios_strip25.png" type="Texture" id=4]
+[ext_resource path="res://scenes/otros/Actividad.tscn" type="PackedScene" id=5]
+[ext_resource path="res://scenes/otros/Puerta.tscn" type="PackedScene" id=6]
+[ext_resource path="res://scripts/Cultivo.gd" type="Script" id=7]
+[ext_resource path="res://sounds/a_cultivo.wav" type="AudioStream" id=8]
+[ext_resource path="res://sounds/a_poner.wav" type="AudioStream" id=9]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 99, 54 )
+
+[node name="Cultivo" type="Node2D" groups=["ediCultivo", "ediffice", "porton", "robable"]]
+script = ExtResource( 7 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Solido" type="Area2D" parent="."]
+position = Vector2( 4, 0 )
+collision_layer = 9
+collision_mask = 0
+input_pickable = false
+monitoring = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Coli" type="CollisionShape2D" parent="Solido"]
+position = Vector2( 0, 8 )
+shape = SubResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Imagen" type="Node2D" parent="." groups=["imagen"]]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Suelo" type="Sprite" parent="Imagen"]
+texture = ExtResource( 3 )
+offset = Vector2( 12, 3 )
+hframes = 4
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Fondo" type="Sprite" parent="Imagen"]
+texture = ExtResource( 4 )
+centered = false
+offset = Vector2( -149, -185 )
+hframes = 25
+frame = 4
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Comida1" type="Sprite" parent="Imagen"]
+visible = false
+position = Vector2( 2, -46 )
+texture = ExtResource( 2 )
+centered = false
+offset = Vector2( -23, -46 )
+hframes = 10
+frame = 8
+__meta__ = {
+"_edit_lock_": true,
+"_editor_description_": ""
+}
+
+[node name="Comida2" type="Sprite" parent="Imagen"]
+visible = false
+position = Vector2( 2, -56 )
+texture = ExtResource( 2 )
+centered = false
+offset = Vector2( -23, -46 )
+hframes = 10
+frame = 8
+__meta__ = {
+"_edit_lock_": true,
+"_editor_description_": ""
+}
+
+[node name="Comida3" type="Sprite" parent="Imagen"]
+visible = false
+position = Vector2( 2, -67 )
+texture = ExtResource( 2 )
+centered = false
+offset = Vector2( -23, -46 )
+hframes = 10
+frame = 8
+__meta__ = {
+"_edit_lock_": true,
+"_editor_description_": ""
+}
+
+[node name="Comida4" type="Sprite" parent="Imagen"]
+visible = false
+position = Vector2( 1, -79 )
+texture = ExtResource( 2 )
+centered = false
+offset = Vector2( -23, -46 )
+hframes = 10
+frame = 8
+__meta__ = {
+"_edit_lock_": true,
+"_editor_description_": ""
+}
+
+[node name="Helice" type="Sprite" parent="Imagen"]
+position = Vector2( 29, -82 )
+texture = ExtResource( 1 )
+centered = false
+offset = Vector2( -58, -113 )
+hframes = 13
+frame = 7
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Salon" type="Node2D" parent="Imagen"]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Sala1" type="Node2D" parent="Imagen/Salon"]
+position = Vector2( -60, -21 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Sala2" type="Node2D" parent="Imagen/Salon"]
+position = Vector2( 74, 46 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Sala" type="YSort" parent="Imagen/Salon" groups=["interior"]]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Maiz1" type="Sprite" parent="Imagen/Salon/Sala"]
+visible = false
+position = Vector2( -56, -16 )
+texture = ExtResource( 1 )
+centered = false
+offset = Vector2( -57, -116 )
+hframes = 13
+frame = 12
+__meta__ = {
+"_edit_lock_": true,
+"_editor_description_": ""
+}
+
+[node name="Maiz2" type="Sprite" parent="Imagen/Salon/Sala"]
+visible = false
+position = Vector2( -49, 8 )
+texture = ExtResource( 1 )
+centered = false
+offset = Vector2( -57, -116 )
+hframes = 13
+frame = 12
+__meta__ = {
+"_edit_lock_": true,
+"_editor_description_": ""
+}
+
+[node name="Maiz3" type="Sprite" parent="Imagen/Salon/Sala"]
+visible = false
+position = Vector2( -58, 30 )
+texture = ExtResource( 1 )
+centered = false
+offset = Vector2( -57, -116 )
+hframes = 13
+frame = 12
+__meta__ = {
+"_edit_lock_": true,
+"_editor_description_": ""
+}
+
+[node name="Maiz4" type="Sprite" parent="Imagen/Salon/Sala"]
+visible = false
+position = Vector2( -18, -7 )
+texture = ExtResource( 1 )
+centered = false
+offset = Vector2( -57, -116 )
+hframes = 13
+frame = 12
+__meta__ = {
+"_edit_lock_": true,
+"_editor_description_": ""
+}
+
+[node name="Maiz5" type="Sprite" parent="Imagen/Salon/Sala"]
+visible = false
+position = Vector2( -23, 21 )
+texture = ExtResource( 1 )
+centered = false
+offset = Vector2( -57, -116 )
+hframes = 13
+frame = 12
+__meta__ = {
+"_edit_lock_": true,
+"_editor_description_": ""
+}
+
+[node name="Maiz6" type="Sprite" parent="Imagen/Salon/Sala"]
+visible = false
+position = Vector2( 14, -8 )
+texture = ExtResource( 1 )
+centered = false
+offset = Vector2( -57, -116 )
+hframes = 13
+frame = 12
+__meta__ = {
+"_edit_lock_": true,
+"_editor_description_": ""
+}
+
+[node name="Maiz7" type="Sprite" parent="Imagen/Salon/Sala"]
+visible = false
+position = Vector2( 19, 26 )
+texture = ExtResource( 1 )
+centered = false
+offset = Vector2( -57, -116 )
+hframes = 13
+frame = 12
+__meta__ = {
+"_edit_lock_": true,
+"_editor_description_": ""
+}
+
+[node name="Maiz8" type="Sprite" parent="Imagen/Salon/Sala"]
+visible = false
+position = Vector2( 51, -13 )
+texture = ExtResource( 1 )
+centered = false
+offset = Vector2( -57, -116 )
+hframes = 13
+frame = 12
+__meta__ = {
+"_edit_lock_": true,
+"_editor_description_": ""
+}
+
+[node name="Maiz9" type="Sprite" parent="Imagen/Salon/Sala"]
+visible = false
+position = Vector2( 64, 9 )
+texture = ExtResource( 1 )
+centered = false
+offset = Vector2( -57, -116 )
+hframes = 13
+frame = 12
+__meta__ = {
+"_edit_lock_": true,
+"_editor_description_": ""
+}
+
+[node name="Maiz10" type="Sprite" parent="Imagen/Salon/Sala"]
+visible = false
+position = Vector2( 51, 31 )
+texture = ExtResource( 1 )
+centered = false
+offset = Vector2( -57, -116 )
+hframes = 13
+frame = 12
+__meta__ = {
+"_edit_lock_": true,
+"_editor_description_": ""
+}
+
+[node name="Frente" type="Sprite" parent="Imagen"]
+texture = ExtResource( 4 )
+centered = false
+offset = Vector2( -149, -185 )
+hframes = 25
+frame = 3
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Actividad" parent="Imagen" instance=ExtResource( 5 )]
+
+[node name="Fin" type="Node2D" parent="."]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Fin1" type="Node2D" parent="Fin"]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Fin2" type="Node2D" parent="Fin"]
+position = Vector2( -69, -31 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Fin3" type="Node2D" parent="Fin"]
+position = Vector2( -24, -26 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Fin4" type="Node2D" parent="Fin"]
+position = Vector2( 27, -27 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Fin5" type="Node2D" parent="Fin"]
+position = Vector2( 70, -28 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Fin6" type="Node2D" parent="Fin"]
+position = Vector2( -64, 33 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Fin7" type="Node2D" parent="Fin"]
+position = Vector2( -25, 28 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Fin8" type="Node2D" parent="Fin"]
+position = Vector2( 27, 30 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Fin9" type="Node2D" parent="Fin"]
+position = Vector2( 75, 41 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Puerta" parent="." instance=ExtResource( 6 )]
+position = Vector2( -40, -60 )
+
+[node name="Semillax" type="Timer" parent="."]
+one_shot = true
+
+[node name="Distribuye" type="Timer" parent="."]
+one_shot = true
+
+[node name="PoneSombra" type="Timer" parent="."]
+one_shot = true
+autostart = true
+
+[node name="Fermenta" type="Timer" parent="."]
+one_shot = true
+
+[node name="Sonido" type="AudioStreamPlayer2D" parent="." groups=["sonido"]]
+stream = ExtResource( 8 )
+bus = "BusEfectos"
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="SPoner" type="AudioStreamPlayer2D" parent="." groups=["sonido"]]
+stream = ExtResource( 9 )
+bus = "BusEfectos"
+__meta__ = {
+"_edit_lock_": true
+}
+
+[connection signal="toggled" from="Imagen/Actividad" to="." method="_on_Actividad_toggled"]
+[connection signal="timeout" from="Semillax" to="." method="_on_Semillax_timeout"]
+[connection signal="timeout" from="Distribuye" to="." method="_on_Distribuye_timeout"]
+[connection signal="timeout" from="PoneSombra" to="." method="_on_PoneSombra_timeout"]
+[connection signal="timeout" from="Fermenta" to="." method="_on_Fermenta_timeout"]

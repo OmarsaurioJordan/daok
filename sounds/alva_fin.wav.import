@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/alva_fin.wav-fc8677d196ca935bd081405bc05da701.sample"
+
+[deps]
+
+source_file="res://sounds/alva_fin.wav"
+dest_files=[ "res://.import/alva_fin.wav-fc8677d196ca935bd081405bc05da701.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=true
+force/max_rate=true
+force/max_rate_hz=16000.0
+edit/trim=false
+edit/normalize=true
+edit/loop=false
+compress/mode=0

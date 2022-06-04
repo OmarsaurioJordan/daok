@@ -1,0 +1,178 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://scripts/PonerBuilding.gd" type="Script" id=1]
+[ext_resource path="res://sprites/d_daok_botones_strip30.png" type="Texture" id=2]
+[ext_resource path="res://scenes/otros/NetoValue.tscn" type="PackedScene" id=3]
+[ext_resource path="res://sprites/d_daok_edificios_strip25.png" type="Texture" id=4]
+[ext_resource path="res://scenes/otros/ValueEtiqueta.tscn" type="PackedScene" id=5]
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 160.5, 88 )
+
+[node name="PJuego" type="Node2D"]
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Construccion" type="Area2D" parent="."]
+position = Vector2( 4, 0 )
+collision_layer = 0
+collision_mask = 161
+input_pickable = false
+monitorable = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Coli" type="CollisionShape2D" parent="Construccion"]
+position = Vector2( -2.5, 3 )
+shape = SubResource( 2 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Imagen" type="Node2D" parent="."]
+modulate = Color( 1, 1, 1, 0.501961 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Fondo" type="Sprite" parent="Imagen"]
+texture = ExtResource( 4 )
+centered = false
+offset = Vector2( -149, -185 )
+hframes = 25
+frame = 13
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Frente" type="Sprite" parent="Imagen"]
+texture = ExtResource( 4 )
+centered = false
+offset = Vector2( -149, -185 )
+hframes = 25
+frame = 12
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Entrada" type="Sprite" parent="Imagen"]
+position = Vector2( 66, 60 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 2 )
+hframes = 30
+__meta__ = {
+"_edit_lock_": true,
+"_editor_description_": ""
+}
+
+[node name="Neto" parent="." instance=ExtResource( 3 )]
+
+[node name="Value" parent="." instance=ExtResource( 5 )]
+position = Vector2( -1, -77 )
+
+[node name="Cimientos" type="Node2D" parent="."]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="C1" type="Node2D" parent="Cimientos"]
+position = Vector2( -119, 48 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="C2" type="Node2D" parent="Cimientos"]
+position = Vector2( -80, 63 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="C3" type="Node2D" parent="Cimientos"]
+position = Vector2( -43, 65 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="C4" type="Node2D" parent="Cimientos"]
+position = Vector2( 0, 67 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="C5" type="Node2D" parent="Cimientos"]
+position = Vector2( 45, 65 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="C6" type="Node2D" parent="Cimientos"]
+position = Vector2( 89, 59 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="C7" type="Node2D" parent="Cimientos"]
+position = Vector2( 124, 47 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="C8" type="Node2D" parent="Cimientos"]
+position = Vector2( 132, 2 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="C9" type="Node2D" parent="Cimientos"]
+position = Vector2( 122, -36 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="C10" type="Node2D" parent="Cimientos"]
+position = Vector2( 87, -49 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="C11" type="Node2D" parent="Cimientos"]
+position = Vector2( 45, -51 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="C12" type="Node2D" parent="Cimientos"]
+position = Vector2( 1, -53 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="C13" type="Node2D" parent="Cimientos"]
+position = Vector2( -42, -49 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="C14" type="Node2D" parent="Cimientos"]
+position = Vector2( -77, -47 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="C15" type="Node2D" parent="Cimientos"]
+position = Vector2( -119, -46 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="C16" type="Node2D" parent="Cimientos"]
+position = Vector2( -123, -4 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[connection signal="area_entered" from="Construccion" to="." method="_on_Construccion_area_entered"]
+[connection signal="area_exited" from="Construccion" to="." method="_on_Construccion_area_exited"]

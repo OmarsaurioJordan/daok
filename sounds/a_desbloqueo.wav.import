@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/a_desbloqueo.wav-cadfcfffa8948b3eb9c08a07758c406f.sample"
+
+[deps]
+
+source_file="res://sounds/a_desbloqueo.wav"
+dest_files=[ "res://.import/a_desbloqueo.wav-cadfcfffa8948b3eb9c08a07758c406f.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=true
+force/max_rate=true
+force/max_rate_hz=16000.0
+edit/trim=false
+edit/normalize=true
+edit/loop=false
+compress/mode=0

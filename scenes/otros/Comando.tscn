@@ -1,0 +1,82 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://scripts/Comando.gd" type="Script" id=1]
+[ext_resource path="res://sprites/d_daok_entes_strip15.png" type="Texture" id=2]
+[ext_resource path="res://sprites/d_daok_piezas_strip13.png" type="Texture" id=3]
+[ext_resource path="res://sprites/d_daok_objetos_strip13.png" type="Texture" id=4]
+
+[sub_resource type="CircleShape2D" id=1]
+radius = 24.0832
+
+[node name="Comando" type="Node2D"]
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Libre" type="Area2D" parent="."]
+collision_layer = 0
+input_pickable = false
+monitorable = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Coli" type="CollisionShape2D" parent="Libre"]
+shape = SubResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Imagen" type="Node2D" parent="." groups=["imagen"]]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Pichirilo" type="Sprite" parent="Imagen"]
+texture = ExtResource( 3 )
+centered = false
+offset = Vector2( -57, -116 )
+hframes = 13
+frame = 10
+__meta__ = {
+"_edit_lock_": true,
+"_editor_description_": ""
+}
+
+[node name="Corona" type="Sprite" parent="Imagen/Pichirilo"]
+position = Vector2( 1, -5 )
+texture = ExtResource( 2 )
+centered = false
+offset = Vector2( -58, -98 )
+hframes = 15
+frame = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Escudo" type="Sprite" parent="Imagen/Pichirilo"]
+visible = false
+position = Vector2( 7, 13 )
+texture = ExtResource( 4 )
+centered = false
+offset = Vector2( -63, -112 )
+hframes = 13
+frame = 10
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Mina" type="Sprite" parent="Imagen/Pichirilo"]
+position = Vector2( 1, 16 )
+texture = ExtResource( 4 )
+centered = false
+offset = Vector2( -63, -112 )
+hframes = 13
+frame = 7
+__meta__ = {
+"_edit_lock_": true
+}
+
+[connection signal="area_entered" from="Libre" to="." method="_on_Libre_area_entered"]
+[connection signal="area_exited" from="Libre" to="." method="_on_Libre_area_exited"]

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/a_compra.wav-c65eb0af86b004f877af676c8d6f13a4.sample"
+
+[deps]
+
+source_file="res://sounds/a_compra.wav"
+dest_files=[ "res://.import/a_compra.wav-c65eb0af86b004f877af676c8d6f13a4.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=true
+force/max_rate=true
+force/max_rate_hz=16000.0
+edit/trim=false
+edit/normalize=true
+edit/loop=false
+compress/mode=0

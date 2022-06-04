@@ -1,0 +1,13 @@
+[remap]
+
+importer="image"
+type="Image"
+path="res://.import/d_mapa2.png-57e236af3e50b79982c21df65dbb8da0.image"
+
+[deps]
+
+source_file="res://sprites/mapas/d_mapa2.png"
+dest_files=[ "res://.import/d_mapa2.png-57e236af3e50b79982c21df65dbb8da0.image" ]
+
+[params]
+

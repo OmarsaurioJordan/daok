@@ -1,0 +1,105 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://sprites/d_particula_humo.png" type="Texture" id=1]
+[ext_resource path="res://sprites/d_daok_edificios_strip25.png" type="Texture" id=2]
+[ext_resource path="res://sounds/a_construir.wav" type="AudioStream" id=3]
+
+[sub_resource type="Gradient" id=10]
+offsets = PoolRealArray( 0, 0.2, 0.8, 1 )
+colors = PoolColorArray( 1, 1, 1, 0.156863, 1, 1, 1, 0.784314, 1, 1, 1, 0.784314, 1, 1, 1, 0.0784314 )
+
+[sub_resource type="GradientTexture" id=13]
+gradient = SubResource( 10 )
+width = 512
+
+[sub_resource type="Curve" id=11]
+bake_resolution = 20
+_data = [ Vector2( 0, 0.186364 ), 0.0, 0.0, 0, 0, Vector2( 1, 1 ), 0.0, 0.0, 0, 0 ]
+
+[sub_resource type="CurveTexture" id=14]
+width = 512
+curve = SubResource( 11 )
+
+[sub_resource type="ParticlesMaterial" id=12]
+lifetime_randomness = 0.2
+flag_disable_z = true
+direction = Vector3( 0, -1, 0 )
+spread = 20.0
+gravity = Vector3( 0, 0, 0 )
+initial_velocity = 12.0
+initial_velocity_random = 0.2
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+angle = 360.0
+angle_random = 1.0
+scale = 1.8
+scale_random = 0.2
+scale_curve = SubResource( 14 )
+color_ramp = SubResource( 13 )
+
+[node name="Andamio" type="Node2D" groups=["andamio"]]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Fondo" type="Sprite" parent="."]
+texture = ExtResource( 2 )
+centered = false
+offset = Vector2( -149, -185 )
+hframes = 25
+frame = 18
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Trabajo" type="Node2D" parent="." groups=["interior"]]
+position = Vector2( 0, -6 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Polvo" type="Particles2D" parent="."]
+self_modulate = Color( 0.94902, 0.709804, 0.137255, 1 )
+position = Vector2( 0, -10 )
+emitting = false
+amount = 5
+lifetime = 10.0
+visibility_rect = Rect2( -75, -170, 150, 180 )
+local_coords = false
+process_material = SubResource( 12 )
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Frente" type="Sprite" parent="."]
+texture = ExtResource( 2 )
+centered = false
+offset = Vector2( -149, -185 )
+hframes = 25
+frame = 17
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Progreso" type="ProgressBar" parent="."]
+margin_left = -38.0
+margin_top = -67.0
+margin_right = 62.0
+margin_bottom = -49.0
+rect_scale = Vector2( 0.75, 0.75 )
+input_pass_on_modal_close_click = false
+step = 0.1
+value = 1.0
+percent_visible = false
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Sonido" type="AudioStreamPlayer2D" parent="." groups=["sonido"]]
+stream = ExtResource( 3 )
+bus = "BusEfectos"
+__meta__ = {
+"_edit_lock_": true
+}

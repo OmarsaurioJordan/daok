@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/a_charla.wav-47b149b16270dd8906bfe07e1e6fe69b.sample"
+
+[deps]
+
+source_file="res://sounds/a_charla.wav"
+dest_files=[ "res://.import/a_charla.wav-47b149b16270dd8906bfe07e1e6fe69b.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=true
+force/max_rate=true
+force/max_rate_hz=16000.0
+edit/trim=false
+edit/normalize=true
+edit/loop=false
+compress/mode=0

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/a_libro.wav-4a128059d5ad791389af215c5b1e76e9.sample"
+
+[deps]
+
+source_file="res://sounds/a_libro.wav"
+dest_files=[ "res://.import/a_libro.wav-4a128059d5ad791389af215c5b1e76e9.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=true
+force/max_rate=true
+force/max_rate_hz=16000.0
+edit/trim=false
+edit/normalize=true
+edit/loop=false
+compress/mode=0

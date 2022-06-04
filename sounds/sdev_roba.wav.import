@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/sdev_roba.wav-de2a55a61d96d5208a95e5547e89604f.sample"
+
+[deps]
+
+source_file="res://sounds/sdev_roba.wav"
+dest_files=[ "res://.import/sdev_roba.wav-de2a55a61d96d5208a95e5547e89604f.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=true
+force/max_rate=true
+force/max_rate_hz=16000.0
+edit/trim=false
+edit/normalize=true
+edit/loop=false
+compress/mode=0

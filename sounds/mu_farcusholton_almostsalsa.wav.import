@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/mu_farcusholton_almostsalsa.wav-f58ee1552b5f93a746de406b4e7c8eff.sample"
+
+[deps]
+
+source_file="res://sounds/mu_farcusholton_almostsalsa.wav"
+dest_files=[ "res://.import/mu_farcusholton_almostsalsa.wav-f58ee1552b5f93a746de406b4e7c8eff.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=true
+force/max_rate=true
+force/max_rate_hz=16000.0
+edit/trim=false
+edit/normalize=true
+edit/loop=false
+compress/mode=0

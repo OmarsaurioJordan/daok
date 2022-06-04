@@ -1,0 +1,142 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://scenes/andamios/Andamio.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scenes/otros/Actividad.tscn" type="PackedScene" id=2]
+[ext_resource path="res://sprites/d_daok_edificios_strip25.png" type="Texture" id=3]
+[ext_resource path="res://scenes/otros/Puerta.tscn" type="PackedScene" id=4]
+[ext_resource path="res://scripts/Construir.gd" type="Script" id=5]
+[ext_resource path="res://scenes/otros/Demoler.tscn" type="PackedScene" id=6]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 86.5, 52 )
+
+[node name="CTrabajo" type="Node2D" groups=["ediAndamios", "ediffice", "porton"]]
+script = ExtResource( 5 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Solido" type="Area2D" parent="."]
+collision_layer = 9
+collision_mask = 0
+input_pickable = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Coli" type="CollisionShape2D" parent="Solido"]
+position = Vector2( 2.5, 5 )
+shape = SubResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Imagen" type="Node2D" parent="." groups=["imagen"]]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Palito1" type="Sprite" parent="Imagen"]
+position = Vector2( 2, -37 )
+scale = Vector2( 1, 0.5 )
+texture = ExtResource( 3 )
+centered = false
+offset = Vector2( -149, -185 )
+hframes = 25
+frame = 14
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Andamio1" parent="Imagen" instance=ExtResource( 1 )]
+position = Vector2( -42, -25 )
+
+[node name="Andamio2" parent="Imagen" instance=ExtResource( 1 )]
+position = Vector2( 53, -26 )
+
+[node name="Palito2" type="Sprite" parent="Imagen"]
+position = Vector2( -69, 5 )
+scale = Vector2( 1, 0.5 )
+texture = ExtResource( 3 )
+centered = false
+offset = Vector2( -149, -185 )
+hframes = 25
+frame = 14
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Palito3" type="Sprite" parent="Imagen"]
+position = Vector2( 72, 2 )
+scale = Vector2( 1, 0.5 )
+texture = ExtResource( 3 )
+centered = false
+offset = Vector2( -149, -185 )
+hframes = 25
+frame = 14
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Andamio3" parent="Imagen" instance=ExtResource( 1 )]
+position = Vector2( -45, 34 )
+
+[node name="Andamio4" parent="Imagen" instance=ExtResource( 1 )]
+position = Vector2( 51, 33 )
+
+[node name="Palito4" type="Sprite" parent="Imagen"]
+position = Vector2( 1, 51 )
+scale = Vector2( 1, 0.5 )
+texture = ExtResource( 3 )
+centered = false
+offset = Vector2( -149, -185 )
+hframes = 25
+frame = 14
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Demoler" parent="Imagen" instance=ExtResource( 6 )]
+position = Vector2( 2, -103 )
+
+[node name="Actividad" parent="Imagen" instance=ExtResource( 2 )]
+margin_top = -193.0
+margin_bottom = -98.0
+
+[node name="Fin" type="Node2D" parent="."]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Fin1" type="Node2D" parent="Fin"]
+position = Vector2( -41, -24 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Fin2" type="Node2D" parent="Fin"]
+position = Vector2( 51, -27 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Fin3" type="Node2D" parent="Fin"]
+position = Vector2( -45, 36 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Fin4" type="Node2D" parent="Fin"]
+position = Vector2( 50, 31 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Puerta" parent="." instance=ExtResource( 4 )]
+position = Vector2( 37, 67 )
+
+[node name="Progreso" type="Timer" parent="."]
+one_shot = true
+
+[connection signal="toggled" from="Imagen/Actividad" to="." method="_on_Actividad_toggled"]
+[connection signal="timeout" from="Progreso" to="." method="_on_Progreso_timeout"]

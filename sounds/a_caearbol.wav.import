@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/a_caearbol.wav-71ce6b52ff3e2510246236cb7bb42cfc.sample"
+
+[deps]
+
+source_file="res://sounds/a_caearbol.wav"
+dest_files=[ "res://.import/a_caearbol.wav-71ce6b52ff3e2510246236cb7bb42cfc.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=true
+force/max_rate=true
+force/max_rate_hz=16000.0
+edit/trim=false
+edit/normalize=true
+edit/loop=false
+compress/mode=0

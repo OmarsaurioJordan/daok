@@ -1,0 +1,80 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://sprites/d_daok_cosas_strip10.png" type="Texture" id=1]
+[ext_resource path="res://scripts/Proyectil.gd" type="Script" id=2]
+[ext_resource path="res://sounds/a_disparo1.wav" type="AudioStream" id=3]
+[ext_resource path="res://sounds/a_mele.wav" type="AudioStream" id=4]
+
+[sub_resource type="CircleShape2D" id=1]
+
+[node name="Proyectil" type="Node2D" groups=["proyectil"]]
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Bala" type="Area2D" parent="."]
+collision_layer = 4
+collision_mask = 3
+input_pickable = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Coli" type="CollisionShape2D" parent="Bala"]
+shape = SubResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Imagen" type="Node2D" parent="." groups=["imagen"]]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Balin" type="Sprite" parent="Imagen"]
+position = Vector2( 0, -34 )
+texture = ExtResource( 1 )
+centered = false
+offset = Vector2( -24, -45 )
+hframes = 10
+frame = 6
+__meta__ = {
+"_edit_lock_": true,
+"_editor_description_": ""
+}
+
+[node name="Ray" type="RayCast2D" parent="."]
+cast_to = Vector2( 0, 0 )
+collision_mask = 3
+collide_with_areas = true
+collide_with_bodies = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Alcance" type="Timer" parent="."]
+one_shot = true
+
+[node name="PoolingFin" type="Timer" parent="."]
+wait_time = 60.0
+one_shot = true
+
+[node name="Sonido" type="AudioStreamPlayer2D" parent="." groups=["sonido"]]
+stream = ExtResource( 3 )
+autoplay = true
+bus = "BusEfectos"
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="SonidoMele" type="AudioStreamPlayer2D" parent="." groups=["sonido"]]
+stream = ExtResource( 4 )
+bus = "BusEfectos"
+__meta__ = {
+"_edit_lock_": true
+}
+
+[connection signal="area_entered" from="Bala" to="." method="_on_Bala_area_entered"]
+[connection signal="timeout" from="Alcance" to="." method="_on_Alcance_timeout"]
+[connection signal="timeout" from="PoolingFin" to="." method="_on_PoolingFin_timeout"]

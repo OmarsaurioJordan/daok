@@ -1,0 +1,15 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+path="res://.import/bmask.png-2ef120da558733b9ef52ea6d2339b114.res"
+
+[deps]
+
+source_file="res://sprites/botones/bmask.png"
+dest_files=[ "res://.import/bmask.png-2ef120da558733b9ef52ea6d2339b114.res" ]
+
+[params]
+
+create_from=0
+threshold=0.5

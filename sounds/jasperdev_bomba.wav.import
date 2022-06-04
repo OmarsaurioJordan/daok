@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/jasperdev_bomba.wav-0743ba068236b7f0f08c241c5df913c4.sample"
+
+[deps]
+
+source_file="res://sounds/jasperdev_bomba.wav"
+dest_files=[ "res://.import/jasperdev_bomba.wav-0743ba068236b7f0f08c241c5df913c4.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=true
+force/max_rate=true
+force/max_rate_hz=16000.0
+edit/trim=false
+edit/normalize=true
+edit/loop=false
+compress/mode=0

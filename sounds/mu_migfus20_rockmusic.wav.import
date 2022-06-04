@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/mu_migfus20_rockmusic.wav-81fca41c21912d9ee487c379341f540b.sample"
+
+[deps]
+
+source_file="res://sounds/mu_migfus20_rockmusic.wav"
+dest_files=[ "res://.import/mu_migfus20_rockmusic.wav-81fca41c21912d9ee487c379341f540b.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=true
+force/max_rate=true
+force/max_rate_hz=16000.0
+edit/trim=false
+edit/normalize=true
+edit/loop=false
+compress/mode=0

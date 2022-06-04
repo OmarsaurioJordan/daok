@@ -1,0 +1,75 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://sprites/d_daok_piezas_strip13.png" type="Texture" id=1]
+[ext_resource path="res://scripts/Quitable.gd" type="Script" id=2]
+[ext_resource path="res://scenes/otros/Puerta.tscn" type="PackedScene" id=3]
+
+[sub_resource type="CircleShape2D" id=1]
+radius = 27.0
+
+[node name="Calle" type="Node2D" groups=["calle", "quitable"]]
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Quitable" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 129
+input_pickable = false
+monitoring = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Coli" type="CollisionShape2D" parent="Quitable"]
+shape = SubResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="LaCalle" type="Area2D" parent="."]
+collision_layer = 128
+collision_mask = 0
+input_pickable = false
+monitoring = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Coli" type="CollisionShape2D" parent="LaCalle"]
+shape = SubResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Imagen" type="Node2D" parent="." groups=["imagen"]]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Pichirilo" type="Sprite" parent="Imagen" groups=["pichirilo"]]
+visible = false
+texture = ExtResource( 1 )
+centered = false
+offset = Vector2( -57, -116 )
+hframes = 13
+frame = 10
+__meta__ = {
+"_edit_lock_": true,
+"_editor_description_": ""
+}
+
+[node name="Puerta" parent="." instance=ExtResource( 3 )]
+
+[node name="Ray" type="RayCast2D" parent="."]
+cast_to = Vector2( 0, 0 )
+collision_mask = 8
+collide_with_areas = true
+collide_with_bodies = false
+
+[node name="BuscaMina" type="Timer" parent="."]
+one_shot = true
+
+[connection signal="area_entered" from="Quitable" to="." method="_on_Quitable_area_entered"]
+[connection signal="timeout" from="BuscaMina" to="." method="_on_BuscaMina_timeout"]

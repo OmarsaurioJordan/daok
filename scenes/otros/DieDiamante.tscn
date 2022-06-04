@@ -1,0 +1,195 @@
+[gd_scene load_steps=16 format=2]
+
+[ext_resource path="res://sprites/d_daok_entes_strip15.png" type="Texture" id=1]
+[ext_resource path="res://scripts/DieDiamante.gd" type="Script" id=2]
+[ext_resource path="res://sprites/d_particula_agua.png" type="Texture" id=3]
+[ext_resource path="res://sounds/jasperdev_muere.wav" type="AudioStream" id=4]
+[ext_resource path="res://sounds/guinxu_muere.wav" type="AudioStream" id=5]
+[ext_resource path="res://sounds/sdev_muere.wav" type="AudioStream" id=6]
+[ext_resource path="res://sounds/a_muertehambre.wav" type="AudioStream" id=7]
+[ext_resource path="res://sounds/a_muertenfermo.wav" type="AudioStream" id=8]
+[ext_resource path="res://sounds/a_muerteviolenta.wav" type="AudioStream" id=9]
+
+[sub_resource type="CircleShape2D" id=1]
+
+[sub_resource type="Gradient" id=10]
+offsets = PoolRealArray( 0, 0.333, 0.666, 1 )
+colors = PoolColorArray( 1, 1, 1, 0.156863, 1, 1, 1, 0.784314, 1, 1, 1, 0.784314, 1, 1, 1, 0.0784314 )
+
+[sub_resource type="GradientTexture" id=8]
+gradient = SubResource( 10 )
+width = 512
+
+[sub_resource type="Curve" id=11]
+bake_resolution = 20
+_data = [ Vector2( 0, 0.288636 ), 0.0, 0.0, 0, 0, Vector2( 1, 1 ), 0.0, 0.0, 0, 0 ]
+
+[sub_resource type="CurveTexture" id=9]
+width = 512
+curve = SubResource( 11 )
+
+[sub_resource type="ParticlesMaterial" id=12]
+lifetime_randomness = 0.2
+flag_disable_z = true
+direction = Vector3( 0, -1, 0 )
+spread = 20.0
+gravity = Vector3( 0, 0, 0 )
+initial_velocity = 25.0
+initial_velocity_random = 0.2
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+angle = 360.0
+angle_random = 1.0
+scale_random = 0.2
+scale_curve = SubResource( 9 )
+color_ramp = SubResource( 8 )
+
+[node name="DieDiamante" type="Node2D"]
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Cadaver" type="Area2D" parent="."]
+collision_layer = 512
+collision_mask = 513
+input_pickable = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Coli" type="CollisionShape2D" parent="Cadaver"]
+shape = SubResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Imagen" type="Node2D" parent="." groups=["imagen"]]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Cuerpo1" type="Sprite" parent="Imagen"]
+position = Vector2( 29, 9 )
+rotation = -0.991347
+texture = ExtResource( 1 )
+centered = false
+offset = Vector2( -58, -98 )
+hframes = 15
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Corona" type="Sprite" parent="Imagen/Cuerpo1"]
+position = Vector2( -37.6044, -13.6349 )
+rotation = 0.771436
+texture = ExtResource( 1 )
+centered = false
+offset = Vector2( -58, -98 )
+hframes = 15
+frame = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Cuerpo2" type="Sprite" parent="Imagen"]
+visible = false
+position = Vector2( -29, 9 )
+rotation = -5.29009
+texture = ExtResource( 1 )
+centered = false
+offset = Vector2( -58, -98 )
+hframes = 15
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Corona" type="Sprite" parent="Imagen/Cuerpo2"]
+position = Vector2( 40.0194, -19.273 )
+rotation = -0.881391
+texture = ExtResource( 1 )
+centered = false
+offset = Vector2( -58, -98 )
+hframes = 15
+frame = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Chapuzon" type="Particles2D" parent="Imagen"]
+scale = Vector2( -1, 1 )
+emitting = false
+amount = 10
+lifetime = 5.0
+one_shot = true
+preprocess = 1.0
+explosiveness = 0.75
+visibility_rect = Rect2( -100, -150, 200, 200 )
+process_material = SubResource( 12 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_lock_": true,
+"_editor_description_": ""
+}
+
+[node name="Pudrir" type="Timer" parent="."]
+wait_time = 180.0
+one_shot = true
+autostart = true
+
+[node name="Tumba" type="Timer" parent="."]
+wait_time = 3.0
+autostart = true
+
+[node name="Sombri" type="Timer" parent="."]
+wait_time = 0.1
+one_shot = true
+autostart = true
+
+[node name="Sjasperdev" type="AudioStreamPlayer2D" parent="." groups=["sonido"]]
+stream = ExtResource( 4 )
+bus = "BusEfectos"
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Sguinxu" type="AudioStreamPlayer2D" parent="." groups=["sonido"]]
+stream = ExtResource( 5 )
+bus = "BusEfectos"
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Ssdev" type="AudioStreamPlayer2D" parent="." groups=["sonido"]]
+stream = ExtResource( 6 )
+bus = "BusEfectos"
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="SHambre" type="AudioStreamPlayer2D" parent="." groups=["sonido"]]
+stream = ExtResource( 7 )
+bus = "BusEfectos"
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="SHerido" type="AudioStreamPlayer2D" parent="." groups=["sonido"]]
+stream = ExtResource( 9 )
+bus = "BusEfectos"
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="SEnfermo" type="AudioStreamPlayer2D" parent="." groups=["sonido"]]
+stream = ExtResource( 8 )
+bus = "BusEfectos"
+__meta__ = {
+"_edit_lock_": true
+}
+
+[connection signal="area_entered" from="Cadaver" to="." method="_on_Movil_area_entered"]
+[connection signal="area_exited" from="Cadaver" to="." method="_on_Movil_area_exited"]
+[connection signal="timeout" from="Pudrir" to="." method="_on_Pudrir_timeout"]
+[connection signal="timeout" from="Tumba" to="." method="_on_Tumba_timeout"]
+[connection signal="timeout" from="Sombri" to="." method="_on_Sombri_timeout"]

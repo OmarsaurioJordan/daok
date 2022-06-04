@@ -1,0 +1,3048 @@
+[gd_scene load_steps=107 format=2]
+
+[ext_resource path="res://sprites/pulsados/b8.png" type="Texture" id=1]
+[ext_resource path="res://sprites/botones/b15.png" type="Texture" id=2]
+[ext_resource path="res://sprites/sombreados/b15.png" type="Texture" id=3]
+[ext_resource path="res://sprites/pulsados/b15.png" type="Texture" id=4]
+[ext_resource path="res://sprites/botones/b6.png" type="Texture" id=5]
+[ext_resource path="res://sprites/botones/b7.png" type="Texture" id=6]
+[ext_resource path="res://sprites/botones/b8.png" type="Texture" id=7]
+[ext_resource path="res://sprites/botones/b9.png" type="Texture" id=8]
+[ext_resource path="res://sprites/botones/b10.png" type="Texture" id=9]
+[ext_resource path="res://sprites/botones/b11.png" type="Texture" id=10]
+[ext_resource path="res://sprites/pulsados/b5.png" type="Texture" id=11]
+[ext_resource path="res://sprites/pulsados/b6.png" type="Texture" id=12]
+[ext_resource path="res://sprites/pulsados/b7.png" type="Texture" id=13]
+[ext_resource path="res://sprites/d_daok_botones_strip30.png" type="Texture" id=14]
+[ext_resource path="res://sprites/botones/b12.png" type="Texture" id=15]
+[ext_resource path="res://sprites/pulsados/b2.png" type="Texture" id=16]
+[ext_resource path="res://sprites/pulsados/b3.png" type="Texture" id=17]
+[ext_resource path="res://sprites/pulsados/b1.png" type="Texture" id=18]
+[ext_resource path="res://sprites/pulsados/b4.png" type="Texture" id=19]
+[ext_resource path="res://sprites/botones/b13.png" type="Texture" id=20]
+[ext_resource path="res://sprites/botones/b5.png" type="Texture" id=21]
+[ext_resource path="res://sprites/botones/b4.png" type="Texture" id=22]
+[ext_resource path="res://sprites/botones/b1.png" type="Texture" id=23]
+[ext_resource path="res://sprites/botones/b2.png" type="Texture" id=24]
+[ext_resource path="res://sprites/botones/b3.png" type="Texture" id=25]
+[ext_resource path="res://sprites/sombreados/b12.png" type="Texture" id=26]
+[ext_resource path="res://sprites/sombreados/b3.png" type="Texture" id=27]
+[ext_resource path="res://sprites/pulsados/b13.png" type="Texture" id=28]
+[ext_resource path="res://sprites/sombreados/b8.png" type="Texture" id=29]
+[ext_resource path="res://sprites/sombreados/b13.png" type="Texture" id=30]
+[ext_resource path="res://sprites/pulsados/b10.png" type="Texture" id=31]
+[ext_resource path="res://sprites/pulsados/b9.png" type="Texture" id=32]
+[ext_resource path="res://sprites/pulsados/b11.png" type="Texture" id=33]
+[ext_resource path="res://sprites/sombreados/b5.png" type="Texture" id=34]
+[ext_resource path="res://sprites/sombreados/b9.png" type="Texture" id=35]
+[ext_resource path="res://sprites/sombreados/b10.png" type="Texture" id=36]
+[ext_resource path="res://sprites/sombreados/b1.png" type="Texture" id=37]
+[ext_resource path="res://sprites/sombreados/b7.png" type="Texture" id=38]
+[ext_resource path="res://sprites/sombreados/b4.png" type="Texture" id=39]
+[ext_resource path="res://sprites/pulsados/b12.png" type="Texture" id=40]
+[ext_resource path="res://sprites/sombreados/b6.png" type="Texture" id=41]
+[ext_resource path="res://sprites/sombreados/b2.png" type="Texture" id=42]
+[ext_resource path="res://sprites/sombreados/b11.png" type="Texture" id=43]
+[ext_resource path="res://sprites/botones/b16.png" type="Texture" id=44]
+[ext_resource path="res://sprites/botones/b24.png" type="Texture" id=45]
+[ext_resource path="res://sprites/botones/b19.png" type="Texture" id=46]
+[ext_resource path="res://sprites/botones/b17.png" type="Texture" id=47]
+[ext_resource path="res://sprites/botones/b18.png" type="Texture" id=48]
+[ext_resource path="res://sprites/pulsados/b18.png" type="Texture" id=49]
+[ext_resource path="res://sprites/pulsados/b19.png" type="Texture" id=50]
+[ext_resource path="res://sprites/pulsados/b24.png" type="Texture" id=51]
+[ext_resource path="res://sprites/pulsados/b17.png" type="Texture" id=52]
+[ext_resource path="res://sprites/pulsados/b16.png" type="Texture" id=53]
+[ext_resource path="res://sprites/sombreados/b19.png" type="Texture" id=54]
+[ext_resource path="res://sprites/sombreados/b17.png" type="Texture" id=55]
+[ext_resource path="res://sprites/sombreados/b24.png" type="Texture" id=56]
+[ext_resource path="res://sprites/sombreados/b18.png" type="Texture" id=57]
+[ext_resource path="res://sprites/sombreados/b16.png" type="Texture" id=58]
+[ext_resource path="res://sprites/mapas/d_daok_mapas_strip15.png" type="Texture" id=59]
+[ext_resource path="res://sprites/botones/b22.png" type="Texture" id=60]
+[ext_resource path="res://sprites/pulsados/b22.png" type="Texture" id=61]
+[ext_resource path="res://sprites/sombreados/b22.png" type="Texture" id=62]
+[ext_resource path="res://scripts/GUI.gd" type="Script" id=63]
+[ext_resource path="res://scenes/otros/Puntico.tscn" type="PackedScene" id=64]
+[ext_resource path="res://sprites/botones/b31.png" type="Texture" id=65]
+[ext_resource path="res://sprites/sombreados/b31.png" type="Texture" id=66]
+[ext_resource path="res://sprites/sombreados/b35.png" type="Texture" id=67]
+[ext_resource path="res://sounds/a_crea_edificacionn.wav" type="AudioStream" id=68]
+[ext_resource path="res://sounds/a_desbloqueoo.wav" type="AudioStream" id=69]
+[ext_resource path="res://sounds/a_botonn.wav" type="AudioStream" id=70]
+[ext_resource path="res://sounds/a_silvasol.wav" type="AudioStream" id=71]
+[ext_resource path="res://sounds/a_demolerrr.wav" type="AudioStream" id=72]
+[ext_resource path="res://sounds/a_conectaa.wav" type="AudioStream" id=73]
+[ext_resource path="res://sounds/a_crea_callee.wav" type="AudioStream" id=74]
+[ext_resource path="res://sounds/a_camara.wav" type="AudioStream" id=75]
+[ext_resource path="res://sounds/devalen_nuevo.wav" type="AudioStream" id=76]
+[ext_resource path="res://sounds/devalen_mover.wav" type="AudioStream" id=77]
+[ext_resource path="res://sounds/devalen_centro.wav" type="AudioStream" id=78]
+[ext_resource path="res://sounds/devalen_introduccion.wav" type="AudioStream" id=79]
+[ext_resource path="res://sounds/jlpm_inicio.wav" type="AudioStream" id=80]
+[ext_resource path="res://sounds/jlpm_fin.wav" type="AudioStream" id=81]
+[ext_resource path="res://sprites/libro_tiras_strip11.png" type="Texture" id=82]
+[ext_resource path="res://sprites/libro_cuadros_strip26.png" type="Texture" id=83]
+[ext_resource path="res://sprites/d_daok_entes_strip15.png" type="Texture" id=84]
+[ext_resource path="res://sprites/tutorial_strip10.png" type="Texture" id=85]
+[ext_resource path="res://sprites/savegame.PNG" type="Texture" id=86]
+[ext_resource path="res://sprites/sombreados/b32.png" type="Texture" id=87]
+[ext_resource path="res://sprites/botones/b33.png" type="Texture" id=88]
+[ext_resource path="res://sprites/sombreados/b33.png" type="Texture" id=89]
+[ext_resource path="res://sprites/sombreados/b34.png" type="Texture" id=90]
+[ext_resource path="res://sprites/botones/b35.png" type="Texture" id=91]
+[ext_resource path="res://sprites/botones/b32.png" type="Texture" id=92]
+[ext_resource path="res://sprites/pulsados/b36.png" type="Texture" id=93]
+[ext_resource path="res://sprites/pulsados/b32.png" type="Texture" id=94]
+[ext_resource path="res://sprites/sombreados/b36.png" type="Texture" id=95]
+[ext_resource path="res://sprites/botones/b34.png" type="Texture" id=96]
+[ext_resource path="res://sprites/pulsados/b34.png" type="Texture" id=97]
+[ext_resource path="res://sprites/pulsados/b33.png" type="Texture" id=98]
+[ext_resource path="res://sprites/botones/b36.png" type="Texture" id=99]
+[ext_resource path="res://sprites/pulsados/b31.png" type="Texture" id=100]
+[ext_resource path="res://sprites/pulsados/b35.png" type="Texture" id=101]
+[ext_resource path="res://sprites/libro_new_buttons.PNG" type="Texture" id=102]
+[ext_resource path="res://sprites/libro_new_botones.PNG" type="Texture" id=103]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0.878431, 0.513726, 0.12549, 1 )
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color( 0.772549, 0.286275, 0.188235, 1 )
+border_blend = true
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id=2]
+bg_color = Color( 0.909804, 0.835294, 0.372549, 1 )
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color( 0.407843, 0.372549, 0.239216, 1 )
+border_blend = true
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id=3]
+bg_color = Color( 0.517647, 0.670588, 0.666667, 1 )
+
+[node name="GUI" type="Control" groups=["gui"]]
+pause_mode = 2
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 63 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Recursos" type="Panel" parent="."]
+margin_left = 6.0
+margin_top = 6.0
+margin_right = 156.0
+margin_bottom = 394.0
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Dinero" type="Sprite" parent="Recursos"]
+position = Vector2( 28, 67 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 14 )
+hframes = 30
+frame = 24
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Num" type="Label" parent="Recursos/Dinero"]
+margin_left = 52.0
+margin_top = -38.0
+margin_right = 87.0
+margin_bottom = -16.0
+rect_scale = Vector2( 4, 4 )
+text = "0"
+valign = 1
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Poblacion" type="Sprite" parent="Recursos"]
+position = Vector2( 30, 107 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 14 )
+hframes = 30
+frame = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Num" type="Label" parent="Recursos/Poblacion"]
+margin_left = 52.0
+margin_top = -38.0
+margin_right = 87.0
+margin_bottom = -16.0
+rect_scale = Vector2( 4, 4 )
+text = "0"
+valign = 1
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Felicidad" type="Sprite" parent="Recursos"]
+position = Vector2( 27, 28 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 14 )
+hframes = 30
+frame = 25
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Num" type="Label" parent="Recursos/Felicidad"]
+margin_left = 52.0
+margin_top = -38.0
+margin_right = 87.0
+margin_bottom = -16.0
+rect_scale = Vector2( 4, 4 )
+text = "0"
+valign = 1
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Virus" type="Sprite" parent="Recursos"]
+position = Vector2( 28, 274 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 14 )
+hframes = 30
+frame = 26
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Num" type="Label" parent="Recursos/Virus"]
+margin_left = 52.0
+margin_top = -38.0
+margin_right = 87.0
+margin_bottom = -16.0
+rect_scale = Vector2( 4, 4 )
+text = "0"
+valign = 1
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Edificios" type="Sprite" parent="Recursos"]
+position = Vector2( 31, 150 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 14 )
+hframes = 30
+frame = 27
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Num" type="Label" parent="Recursos/Edificios"]
+margin_left = 52.0
+margin_top = -38.0
+margin_right = 87.0
+margin_bottom = -16.0
+rect_scale = Vector2( 4, 4 )
+text = "0"
+valign = 1
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Productos" type="Sprite" parent="Recursos"]
+position = Vector2( 28, 320 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 14 )
+hframes = 30
+frame = 28
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Num" type="Label" parent="Recursos/Productos"]
+margin_left = 52.0
+margin_top = -38.0
+margin_right = 87.0
+margin_bottom = -16.0
+rect_scale = Vector2( 4, 4 )
+text = "0"
+valign = 1
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Alimentos" type="Sprite" parent="Recursos"]
+position = Vector2( 30, 190 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 14 )
+hframes = 30
+frame = 29
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Num" type="Label" parent="Recursos/Alimentos"]
+margin_left = 52.0
+margin_top = -38.0
+margin_right = 87.0
+margin_bottom = -16.0
+rect_scale = Vector2( 4, 4 )
+text = "0"
+valign = 1
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Arboles" type="Sprite" parent="Recursos"]
+position = Vector2( 26, 360 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 14 )
+hframes = 30
+frame = 10
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Num" type="Label" parent="Recursos/Arboles"]
+margin_left = 52.0
+margin_top = -38.0
+margin_right = 87.0
+margin_bottom = -16.0
+rect_scale = Vector2( 4, 4 )
+text = "0"
+valign = 1
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Defensas" type="Sprite" parent="Recursos"]
+position = Vector2( 30, 230 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 14 )
+hframes = 30
+frame = 7
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Num" type="Label" parent="Recursos/Defensas"]
+margin_left = 52.0
+margin_top = -38.0
+margin_right = 87.0
+margin_bottom = -16.0
+rect_scale = Vector2( 4, 4 )
+text = "0/0"
+valign = 1
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Opciones" type="Panel" parent="."]
+margin_left = 650.0
+margin_top = 7.0
+margin_right = 1017.0
+margin_bottom = 61.0
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="BSeguidor" type="TextureButton" parent="Opciones"]
+margin_left = -7.0
+margin_top = -23.0
+margin_right = 89.0
+margin_bottom = 72.0
+rect_scale = Vector2( 0.75, 0.75 )
+rect_pivot_offset = Vector2( 48, 48 )
+focus_mode = 0
+action_mode = 0
+enabled_focus_mode = 0
+texture_normal = ExtResource( 60 )
+texture_pressed = ExtResource( 61 )
+texture_hover = ExtResource( 62 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="BScreenshot" type="TextureButton" parent="Opciones"]
+margin_left = 61.0
+margin_top = -22.0
+margin_right = 157.0
+margin_bottom = 73.0
+rect_scale = Vector2( 0.75, 0.75 )
+rect_pivot_offset = Vector2( 48, 48 )
+focus_mode = 0
+action_mode = 0
+enabled_focus_mode = 0
+texture_normal = ExtResource( 2 )
+texture_pressed = ExtResource( 4 )
+texture_hover = ExtResource( 3 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="BSpeedOff" type="TextureButton" parent="Opciones"]
+margin_left = 132.0
+margin_top = -21.0
+margin_right = 228.0
+margin_bottom = 74.0
+rect_scale = Vector2( 0.75, 0.75 )
+rect_pivot_offset = Vector2( 48, 48 )
+focus_mode = 0
+action_mode = 0
+enabled_focus_mode = 0
+texture_normal = ExtResource( 44 )
+texture_pressed = ExtResource( 53 )
+texture_hover = ExtResource( 58 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="BSpeedOn" type="TextureButton" parent="Opciones"]
+visible = false
+margin_left = 132.0
+margin_top = -21.0
+margin_right = 228.0
+margin_bottom = 74.0
+rect_scale = Vector2( 0.75, 0.75 )
+rect_pivot_offset = Vector2( 48, 48 )
+focus_mode = 0
+action_mode = 0
+enabled_focus_mode = 0
+texture_normal = ExtResource( 47 )
+texture_pressed = ExtResource( 52 )
+texture_hover = ExtResource( 55 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="BEyeOff" type="TextureButton" parent="Opciones"]
+margin_left = 204.0
+margin_top = -17.0
+margin_right = 300.0
+margin_bottom = 78.0
+rect_scale = Vector2( 0.75, 0.75 )
+rect_pivot_offset = Vector2( 48, 48 )
+focus_mode = 0
+action_mode = 0
+enabled_focus_mode = 0
+texture_normal = ExtResource( 48 )
+texture_pressed = ExtResource( 49 )
+texture_hover = ExtResource( 57 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="BEyeOn" type="TextureButton" parent="Opciones"]
+visible = false
+margin_left = 204.0
+margin_top = -17.0
+margin_right = 300.0
+margin_bottom = 78.0
+rect_scale = Vector2( 0.75, 0.75 )
+rect_pivot_offset = Vector2( 48, 48 )
+focus_mode = 0
+action_mode = 0
+enabled_focus_mode = 0
+texture_normal = ExtResource( 46 )
+texture_pressed = ExtResource( 50 )
+texture_hover = ExtResource( 54 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="BInfo" type="TextureButton" parent="Opciones"]
+margin_left = 278.0
+margin_top = -26.0
+margin_right = 374.0
+margin_bottom = 69.0
+rect_scale = Vector2( 0.75, 0.75 )
+rect_pivot_offset = Vector2( 48, 48 )
+focus_mode = 0
+action_mode = 0
+enabled_focus_mode = 0
+texture_normal = ExtResource( 45 )
+texture_pressed = ExtResource( 51 )
+texture_hover = ExtResource( 56 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Minimapa" type="Panel" parent="."]
+margin_left = 6.0
+margin_top = 415.0
+margin_right = 186.0
+margin_bottom = 595.0
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Mapa" type="Sprite" parent="Minimapa"]
+self_modulate = Color( 0.341176, 0.317647, 0.152941, 0.392157 )
+scale = Vector2( 1.4, 1.4 )
+texture = ExtResource( 59 )
+centered = false
+hframes = 15
+frame = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Puntos" type="Node2D" parent="Minimapa"]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Puntico" parent="Minimapa/Puntos" instance=ExtResource( 64 )]
+margin_left = 180.0
+margin_top = 180.0
+margin_right = 212.0
+margin_bottom = 204.0
+
+[node name="Camara" type="Panel" parent="Minimapa"]
+self_modulate = Color( 1, 1, 1, 0.588235 )
+margin_left = 65.0
+margin_top = 71.0
+margin_right = 101.8
+margin_bottom = 92.6
+rect_pivot_offset = Vector2( 18.4, 10.8 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="MaskMap" type="Panel" parent="Minimapa"]
+modulate = Color( 1, 1, 1, 0.00392157 )
+margin_right = 180.0
+margin_bottom = 180.0
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Fecha" type="Panel" parent="."]
+margin_left = 494.0
+margin_top = 7.0
+margin_right = 628.0
+margin_bottom = 91.0
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Time" type="ProgressBar" parent="Fecha"]
+margin_left = 6.0
+margin_top = 7.0
+margin_right = 128.0
+margin_bottom = 37.0
+custom_styles/fg = SubResource( 1 )
+custom_styles/bg = SubResource( 2 )
+percent_visible = false
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false,
+"_editor_description_": ""
+}
+
+[node name="Edad" type="Sprite" parent="Fecha"]
+position = Vector2( 21, 58 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 14 )
+hframes = 30
+frame = 22
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Num" type="Label" parent="Fecha/Edad"]
+margin_left = 48.0
+margin_top = -36.0
+margin_right = 91.0
+margin_bottom = -14.0
+rect_scale = Vector2( 4, 4 )
+text = "0"
+valign = 1
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Buildings" type="Panel" parent="."]
+margin_left = 206.0
+margin_top = 538.0
+margin_right = 1014.0
+margin_bottom = 592.0
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="BCalle" type="TextureButton" parent="Buildings"]
+margin_left = -15.0
+margin_top = -25.0
+margin_right = 81.0
+margin_bottom = 70.0
+rect_scale = Vector2( 0.75, 0.75 )
+rect_pivot_offset = Vector2( 48, 48 )
+focus_mode = 0
+action_mode = 0
+enabled_focus_mode = 0
+texture_normal = ExtResource( 23 )
+texture_pressed = ExtResource( 18 )
+texture_hover = ExtResource( 37 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="BEdificio" type="TextureButton" parent="Buildings"]
+margin_left = 47.0
+margin_top = -26.0
+margin_right = 143.0
+margin_bottom = 69.0
+rect_scale = Vector2( 0.75, 0.75 )
+rect_pivot_offset = Vector2( 48, 48 )
+focus_mode = 0
+action_mode = 0
+enabled_focus_mode = 0
+texture_normal = ExtResource( 24 )
+texture_pressed = ExtResource( 16 )
+texture_hover = ExtResource( 42 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="BOcio" type="TextureButton" parent="Buildings"]
+margin_left = 178.0
+margin_top = -23.0
+margin_right = 274.0
+margin_bottom = 72.0
+rect_scale = Vector2( 0.75, 0.75 )
+rect_pivot_offset = Vector2( 48, 48 )
+focus_mode = 0
+action_mode = 0
+enabled_focus_mode = 0
+texture_normal = ExtResource( 25 )
+texture_pressed = ExtResource( 17 )
+texture_hover = ExtResource( 27 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="BCultivo" type="TextureButton" parent="Buildings"]
+margin_left = 112.0
+margin_top = -23.0
+margin_right = 208.0
+margin_bottom = 72.0
+rect_scale = Vector2( 0.75, 0.75 )
+rect_pivot_offset = Vector2( 48, 48 )
+focus_mode = 0
+action_mode = 0
+enabled_focus_mode = 0
+texture_normal = ExtResource( 22 )
+texture_pressed = ExtResource( 19 )
+texture_hover = ExtResource( 39 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="BTrabajo" type="TextureButton" parent="Buildings"]
+margin_left = 246.0
+margin_top = -27.0
+margin_right = 342.0
+margin_bottom = 68.0
+rect_scale = Vector2( 0.75, 0.75 )
+rect_pivot_offset = Vector2( 48, 48 )
+focus_mode = 0
+action_mode = 0
+enabled_focus_mode = 0
+texture_normal = ExtResource( 21 )
+texture_pressed = ExtResource( 11 )
+texture_hover = ExtResource( 34 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="BPuerto" type="TextureButton" parent="Buildings"]
+margin_left = 307.0
+margin_top = -26.0
+margin_right = 403.0
+margin_bottom = 69.0
+rect_scale = Vector2( 0.75, 0.75 )
+rect_pivot_offset = Vector2( 48, 48 )
+focus_mode = 0
+action_mode = 0
+enabled_focus_mode = 0
+texture_normal = ExtResource( 5 )
+texture_pressed = ExtResource( 12 )
+texture_hover = ExtResource( 41 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="BHospital" type="TextureButton" parent="Buildings"]
+margin_left = 375.0
+margin_top = -23.0
+margin_right = 471.0
+margin_bottom = 72.0
+rect_scale = Vector2( 0.75, 0.75 )
+rect_pivot_offset = Vector2( 48, 48 )
+focus_mode = 0
+action_mode = 0
+enabled_focus_mode = 0
+texture_normal = ExtResource( 6 )
+texture_pressed = ExtResource( 13 )
+texture_hover = ExtResource( 38 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="BTorre" type="TextureButton" parent="Buildings"]
+margin_left = 438.0
+margin_top = -23.0
+margin_right = 534.0
+margin_bottom = 72.0
+rect_scale = Vector2( 0.75, 0.75 )
+rect_pivot_offset = Vector2( 48, 48 )
+focus_mode = 0
+action_mode = 0
+enabled_focus_mode = 0
+texture_normal = ExtResource( 7 )
+texture_pressed = ExtResource( 1 )
+texture_hover = ExtResource( 29 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="BEstudio" type="TextureButton" parent="Buildings"]
+margin_left = 496.0
+margin_top = -20.0
+margin_right = 592.0
+margin_bottom = 75.0
+rect_scale = Vector2( 0.75, 0.75 )
+rect_pivot_offset = Vector2( 48, 48 )
+focus_mode = 0
+action_mode = 0
+enabled_focus_mode = 0
+texture_normal = ExtResource( 8 )
+texture_pressed = ExtResource( 32 )
+texture_hover = ExtResource( 35 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="BJuego" type="TextureButton" parent="Buildings"]
+margin_left = 558.0
+margin_top = -22.0
+margin_right = 654.0
+margin_bottom = 73.0
+rect_scale = Vector2( 0.75, 0.75 )
+rect_pivot_offset = Vector2( 48, 48 )
+focus_mode = 0
+action_mode = 0
+enabled_focus_mode = 0
+texture_normal = ExtResource( 9 )
+texture_pressed = ExtResource( 31 )
+texture_hover = ExtResource( 36 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="BParque" type="TextureButton" parent="Buildings"]
+margin_left = 614.0
+margin_top = -22.0
+margin_right = 710.0
+margin_bottom = 73.0
+rect_scale = Vector2( 0.75, 0.75 )
+rect_pivot_offset = Vector2( 48, 48 )
+focus_mode = 0
+action_mode = 0
+enabled_focus_mode = 0
+texture_normal = ExtResource( 10 )
+texture_pressed = ExtResource( 33 )
+texture_hover = ExtResource( 43 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="BCentro" type="TextureButton" parent="Buildings"]
+margin_left = 672.0
+margin_top = -22.0
+margin_right = 768.0
+margin_bottom = 73.0
+rect_scale = Vector2( 0.75, 0.75 )
+rect_pivot_offset = Vector2( 48, 48 )
+focus_mode = 0
+action_mode = 0
+enabled_focus_mode = 0
+texture_normal = ExtResource( 15 )
+texture_pressed = ExtResource( 40 )
+texture_hover = ExtResource( 26 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="BDemolision" type="TextureButton" parent="Buildings"]
+margin_left = 731.0
+margin_top = -23.0
+margin_right = 827.0
+margin_bottom = 72.0
+rect_scale = Vector2( 0.75, 0.75 )
+rect_pivot_offset = Vector2( 48, 48 )
+focus_mode = 0
+action_mode = 0
+enabled_focus_mode = 0
+texture_normal = ExtResource( 20 )
+texture_pressed = ExtResource( 28 )
+texture_hover = ExtResource( 30 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Ordenes" type="Panel" parent="."]
+margin_left = 175.0
+margin_top = 9.0
+margin_right = 466.0
+margin_bottom = 65.0
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="BNacer" type="TextureButton" parent="Ordenes"]
+margin_left = -6.0
+margin_top = -12.0
+margin_right = 100.0
+margin_bottom = 93.0
+rect_scale = Vector2( 0.75, 0.75 )
+texture_normal = ExtResource( 65 )
+texture_pressed = ExtResource( 100 )
+texture_hover = ExtResource( 66 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="BComando" type="TextureButton" parent="Ordenes"]
+margin_left = 56.0
+margin_top = -10.0
+margin_right = 152.0
+margin_bottom = 85.0
+rect_scale = Vector2( 0.75, 0.75 )
+texture_normal = ExtResource( 92 )
+texture_pressed = ExtResource( 94 )
+texture_hover = ExtResource( 87 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="BObreros" type="TextureButton" parent="Ordenes"]
+margin_left = 108.0
+margin_top = -13.0
+margin_right = 214.0
+margin_bottom = 92.0
+rect_scale = Vector2( 0.75, 0.75 )
+texture_normal = ExtResource( 88 )
+texture_pressed = ExtResource( 98 )
+texture_hover = ExtResource( 89 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="BDinamita" type="TextureButton" parent="Ordenes"]
+margin_left = 158.0
+margin_top = -9.0
+margin_right = 254.0
+margin_bottom = 86.0
+rect_scale = Vector2( 0.75, 0.75 )
+texture_normal = ExtResource( 96 )
+texture_pressed = ExtResource( 97 )
+texture_hover = ExtResource( 90 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="BCaos" type="TextureButton" parent="Ordenes"]
+margin_left = 220.0
+margin_top = -13.0
+margin_right = 326.0
+margin_bottom = 92.0
+rect_scale = Vector2( 0.75, 0.75 )
+texture_normal = ExtResource( 99 )
+texture_pressed = ExtResource( 93 )
+texture_hover = ExtResource( 95 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="BLores" type="TextureButton" parent="Ordenes"]
+visible = false
+margin_left = 219.0
+margin_top = -10.0
+margin_right = 325.0
+margin_bottom = 95.0
+rect_scale = Vector2( 0.75, 0.75 )
+texture_normal = ExtResource( 91 )
+texture_pressed = ExtResource( 101 )
+texture_hover = ExtResource( 67 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Investigacion" type="Panel" parent="."]
+visible = false
+margin_left = 929.0
+margin_top = 452.0
+margin_right = 1010.0
+margin_bottom = 527.0
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Progreso" type="ProgressBar" parent="Investigacion"]
+margin_left = 5.0
+margin_top = 40.0
+margin_right = 77.0
+margin_bottom = 70.0
+custom_styles/fg = SubResource( 1 )
+custom_styles/bg = SubResource( 2 )
+percent_visible = false
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Proyecto" type="Sprite" parent="Investigacion"]
+position = Vector2( 42, 25 )
+scale = Vector2( 0.6, 0.6 )
+texture = ExtResource( 14 )
+hframes = 30
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Value" type="Node2D" parent="."]
+visible = false
+position = Vector2( 546, 272 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Fondito" type="Panel" parent="Value"]
+margin_left = -104.0
+margin_top = -26.0
+margin_right = 7.0
+margin_bottom = 23.0
+mouse_filter = 2
+input_pass_on_modal_close_click = false
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Valor" type="Label" parent="Value"]
+margin_left = -105.0
+margin_top = -27.0
+margin_right = -49.0
+margin_bottom = -1.0
+rect_scale = Vector2( 2, 2 )
+input_pass_on_modal_close_click = false
+text = "$0"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="ViSuave" type="Node2D" parent="Value"]
+visible = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Protektor" type="Panel" parent="."]
+visible = false
+modulate = Color( 1, 1, 1, 0.00392157 )
+margin_right = 1024.0
+margin_bottom = 600.0
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="SubLibro" type="Panel" parent="."]
+visible = false
+modulate = Color( 1, 1, 1, 0.607843 )
+margin_right = 1024.0
+margin_bottom = 600.0
+custom_styles/panel = SubResource( 3 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Negritud" type="Panel" parent="."]
+visible = false
+modulate = Color( 0.364706, 0.364706, 0.364706, 0.788235 )
+margin_right = 1024.0
+margin_bottom = 600.0
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="FileDialog" type="FileDialog" parent="."]
+margin_left = 240.0
+margin_top = 104.0
+margin_right = 917.0
+margin_bottom = 519.0
+popup_exclusive = true
+window_title = "Guardar un Archivo"
+resizable = true
+dialog_hide_on_ok = true
+mode_overrides_title = false
+access = 2
+filters = PoolStringArray( "*.png ; PNG" )
+current_dir = "/Users/ojorc/OneDrive/Documents/GMS_proyectos/Daok"
+current_path = "/Users/ojorc/OneDrive/Documents/GMS_proyectos/Daok/"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Stadistics" type="Timer" parent="."]
+wait_time = 4.0
+autostart = true
+
+[node name="TimProtektor" type="Timer" parent="."]
+wait_time = 0.5
+one_shot = true
+
+[node name="Cientifik" type="Timer" parent="."]
+wait_time = 3.0
+
+[node name="Rtooltip" type="Timer" parent="."]
+wait_time = 0.3
+one_shot = true
+
+[node name="LibroTime" type="Timer" parent="."]
+wait_time = 100.0
+autostart = true
+
+[node name="SDesbloqueo" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 69 )
+
+[node name="SCreaEdificacion" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 68 )
+
+[node name="SBoton" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 70 )
+
+[node name="SFoto" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 75 )
+
+[node name="SDia" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 71 )
+
+[node name="SDestruir" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 72 )
+
+[node name="SConectar" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 73 )
+
+[node name="SCalle" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 74 )
+
+[node name="SOrden" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 77 )
+volume_db = -8.0
+bus = "GranVoz"
+
+[node name="SNace" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 76 )
+volume_db = -8.0
+bus = "GranVoz"
+
+[node name="SCentro" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 78 )
+volume_db = -3.0
+bus = "GranVoz"
+
+[node name="SIntroduccion" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 79 )
+volume_db = -3.0
+bus = "GranVoz"
+
+[node name="SPandemia" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 80 )
+volume_db = -3.0
+bus = "GranVoz"
+
+[node name="SCurados" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 81 )
+volume_db = -3.0
+bus = "GranVoz"
+
+[node name="Libro" type="Panel" parent="."]
+margin_left = 1161.0
+margin_top = 82.0
+margin_right = 1879.0
+margin_bottom = 512.0
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Siguiente" type="TextureButton" parent="Libro"]
+margin_left = 635.0
+margin_top = 5.00003
+margin_right = 731.0
+margin_bottom = 100.0
+rect_scale = Vector2( 0.8, 0.8 )
+texture_normal = ExtResource( 44 )
+texture_pressed = ExtResource( 53 )
+texture_hover = ExtResource( 58 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Anterior" type="TextureButton" parent="Libro"]
+margin_left = 82.0
+margin_top = 2.00003
+margin_right = 178.0
+margin_bottom = 97.0
+rect_scale = Vector2( -0.8, 0.8 )
+texture_normal = ExtResource( 44 )
+texture_pressed = ExtResource( 53 )
+texture_hover = ExtResource( 58 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Pausador" type="CheckBox" parent="Libro"]
+margin_left = 550.0
+margin_top = -16.0
+margin_right = 661.0
+margin_bottom = 8.0
+rect_scale = Vector2( 1.25, 1.25 )
+focus_mode = 0
+shortcut_in_tooltip = false
+pressed = true
+enabled_focus_mode = 0
+text = "Pausar juego"
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Hojas" type="Control" parent="Libro"]
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Hoja0" type="Control" parent="Libro/Hojas"]
+visible = false
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Titulo" type="Label" parent="Libro/Hojas/Hoja0"]
+margin_left = 76.0
+margin_top = 12.0
+margin_right = 302.0
+margin_bottom = 34.0
+rect_scale = Vector2( 2.5, 2.5 )
+text = "Bienvenido a Daok"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Image" type="Sprite" parent="Libro/Hojas/Hoja0"]
+position = Vector2( 369, 234 )
+scale = Vector2( 0.9, 0.9 )
+texture = ExtResource( 82 )
+hframes = 11
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Info" type="Label" parent="Libro/Hojas/Hoja0"]
+margin_left = 12.0
+margin_top = 394.0
+margin_right = 511.0
+margin_bottom = 415.0
+rect_scale = Vector2( 1.4, 1.4 )
+text = "Clic derecho para mover cámara. Siempre clic medio para retroceder"
+align = 1
+autowrap = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Hoja1" type="Control" parent="Libro/Hojas"]
+visible = false
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Titulo" type="Label" parent="Libro/Hojas/Hoja1"]
+margin_left = 76.0
+margin_top = 12.0
+margin_right = 302.0
+margin_bottom = 34.0
+rect_scale = Vector2( 2.5, 2.5 )
+text = "Cómo Empezar"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Video" type="Sprite" parent="Libro/Hojas/Hoja1"]
+position = Vector2( 192, 245 )
+scale = Vector2( 0.75, 0.75 )
+texture = ExtResource( 85 )
+hframes = 10
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Image1" type="Sprite" parent="Libro/Hojas/Hoja1"]
+position = Vector2( 95.9999, 113 )
+scale = Vector2( 0.29, 0.29 )
+texture = ExtResource( 103 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="LibroNewButtons" type="Sprite" parent="Libro/Hojas/Hoja1/Image1"]
+position = Vector2( 737.932, 175.862 )
+texture = ExtResource( 102 )
+
+[node name="Info" type="Label" parent="Libro/Hojas/Hoja1"]
+margin_left = 378.0
+margin_top = 76.0
+margin_right = 617.0
+margin_bottom = 324.0
+rect_scale = Vector2( 1.4, 1.4 )
+text = "1. Seleccióne construir edificio
+2. Coloque edificio cerca a mina
+3. Seleccióne construir calles
+4. Cloque calle en puerta de edificio
+5. Coloque otra calle cerca a mina
+6. Conecte las calles, sostenga clic
+7. Seleccióne comando de diamantes
+8. Traiga diamantes cercanos
+9. Active investigación de cultivo
+10. Acelere el reloj
+11. Botón para forzarlos a construir
+12. Seleccióne construir cultivo
+13. Coloque cultivo puerta  a calle"
+autowrap = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Next" type="TextureButton" parent="Libro/Hojas/Hoja1"]
+margin_left = 164.0
+margin_top = 362.0
+margin_right = 260.0
+margin_bottom = 457.0
+rect_scale = Vector2( 0.8, 0.8 )
+texture_normal = ExtResource( 44 )
+texture_pressed = ExtResource( 53 )
+texture_hover = ExtResource( 58 )
+__meta__ = {
+"_edit_lock_": true,
+"_editor_description_": ""
+}
+
+[node name="Hoja2" type="Control" parent="Libro/Hojas"]
+visible = false
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Titulo" type="Label" parent="Libro/Hojas/Hoja2"]
+margin_left = 76.0
+margin_top = 12.0
+margin_right = 302.0
+margin_bottom = 34.0
+rect_scale = Vector2( 2.5, 2.5 )
+text = "Construir e Investigar"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Image1" type="Sprite" parent="Libro/Hojas/Hoja2"]
+position = Vector2( 753, 414 )
+texture = ExtResource( 82 )
+hframes = 11
+frame = 10
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Image2" type="Sprite" parent="Libro/Hojas/Hoja2"]
+position = Vector2( 394, 274 )
+texture = ExtResource( 82 )
+hframes = 11
+frame = 4
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Info1" type="Label" parent="Libro/Hojas/Hoja2"]
+margin_left = 29.0
+margin_top = 219.0
+margin_right = 270.0
+margin_bottom = 362.0
+rect_scale = Vector2( 1.4, 1.4 )
+text = "Pero al inicio la mayoría estarán bloqueadas (lucen translucidas). Al pulsarles quedarán en modo investigación, esto tardará un tiempo y consumira dinero gradualmente. Puedes ver los costos pasando el cursor sobre los botónes"
+align = 1
+autowrap = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Info2" type="Label" parent="Libro/Hojas/Hoja2"]
+margin_left = 498.0
+margin_top = 101.0
+margin_right = 643.0
+margin_bottom = 160.0
+rect_scale = Vector2( 1.4, 1.4 )
+text = "Los botónes inferiores sirven para construir calles y edificaciónes"
+align = 1
+autowrap = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Info3" type="Label" parent="Libro/Hojas/Hoja2"]
+margin_left = 383.0
+margin_top = 233.0
+margin_right = 520.0
+margin_bottom = 273.0
+rect_scale = Vector2( 1.4, 1.4 )
+text = "El martillo es para demoler, a un costo"
+align = 1
+autowrap = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Hoja3" type="Control" parent="Libro/Hojas"]
+visible = false
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Titulo" type="Label" parent="Libro/Hojas/Hoja3"]
+margin_left = 76.0
+margin_top = 12.0
+margin_right = 302.0
+margin_bottom = 34.0
+rect_scale = Vector2( 2.5, 2.5 )
+text = "Minimapa y Tiempo"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Image1" type="Sprite" parent="Libro/Hojas/Hoja3"]
+position = Vector2( 897, 281 )
+texture = ExtResource( 82 )
+hframes = 11
+frame = 7
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Image2" type="Sprite" parent="Libro/Hojas/Hoja3"]
+position = Vector2( 406, 306 )
+texture = ExtResource( 82 )
+hframes = 11
+frame = 3
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Info1" type="Label" parent="Libro/Hojas/Hoja3"]
+margin_left = 524.0
+margin_top = 229.0
+margin_right = 637.0
+margin_bottom = 348.0
+rect_scale = Vector2( 1.4, 1.4 )
+text = "El indicador de tiempo contará cuántos días han pasado"
+align = 1
+autowrap = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Info2" type="Label" parent="Libro/Hojas/Hoja3"]
+margin_left = 237.0
+margin_top = 141.0
+margin_right = 409.0
+margin_bottom = 277.0
+rect_scale = Vector2( 1.4, 1.4 )
+text = "Los puntos rojos son edificaciónes, los azules minas y los amarillos árboles. Aquí puedes ver dónde se encuentra la cámara y si pulsas clic izquierdo la reubicas"
+align = 1
+autowrap = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Hoja4" type="Control" parent="Libro/Hojas"]
+visible = false
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Titulo" type="Label" parent="Libro/Hojas/Hoja4"]
+margin_left = 76.0
+margin_top = 12.0
+margin_right = 302.0
+margin_bottom = 34.0
+rect_scale = Vector2( 2.5, 2.5 )
+text = "Estadísticas"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Image1" type="Sprite" parent="Libro/Hojas/Hoja4"]
+position = Vector2( 396, 252 )
+texture = ExtResource( 82 )
+hframes = 11
+frame = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Image2" type="Sprite" parent="Libro/Hojas/Hoja4"]
+position = Vector2( 512, 396 )
+texture = ExtResource( 82 )
+hframes = 11
+frame = 2
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Info1" type="Label" parent="Libro/Hojas/Hoja4"]
+margin_left = 198.0
+margin_top = 83.0
+margin_right = 365.0
+margin_bottom = 179.0
+rect_scale = Vector2( 1.4, 1.4 )
+text = "Felicidad promedio
+Dinero total
+Población de diamantes
+Viviendas (camas)
+Alimento total"
+autowrap = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Info2" type="Label" parent="Libro/Hojas/Hoja4"]
+margin_left = 313.0
+margin_top = 290.0
+margin_right = 460.0
+margin_bottom = 376.0
+rect_scale = Vector2( 1.4, 1.4 )
+text = "Soldados / Enemigos
+Enfermos actuales
+Mercancías totales
+Árboles en el mundo"
+autowrap = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Info3" type="Label" parent="Libro/Hojas/Hoja4"]
+margin_left = 454.0
+margin_top = 82.0
+margin_right = 633.0
+margin_bottom = 212.0
+rect_scale = Vector2( 1.4, 1.4 )
+text = "Generar Dinero:
+- Subsidio diario
+- Impuesto de vivienda
+- Vender chucherías (Pub)
+- Vender alimentos (Pub)
+- Entrada al Pub
+- Vender comida cruda"
+align = 1
+autowrap = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Hoja5" type="Control" parent="Libro/Hojas"]
+visible = false
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Titulo" type="Label" parent="Libro/Hojas/Hoja5"]
+margin_left = 76.0
+margin_top = 12.0
+margin_right = 302.0
+margin_bottom = 34.0
+rect_scale = Vector2( 2.5, 2.5 )
+text = "Otras Funciónes"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Image" type="Sprite" parent="Libro/Hojas/Hoja5"]
+position = Vector2( 529, 274 )
+texture = ExtResource( 82 )
+hframes = 11
+frame = 8
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Info" type="Label" parent="Libro/Hojas/Hoja5"]
+margin_left = 61.0
+margin_top = 200.0
+margin_right = 495.0
+margin_bottom = 334.0
+rect_scale = Vector2( 1.4, 1.4 )
+text = "Barra de opciónes y complementos, de izquierda a derecha:
+
+- Mira automática que sigue a algun diamante al azar
+- Guardar una foto de pantalla (screenshot)
+- Acelerar el reloj o retornarlo a x1
+- Ver o no los botónes de activar o desactivar edificaciónes
+- Mostrar la presente ayuda (información)"
+align = 1
+autowrap = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Hoja6" type="Control" parent="Libro/Hojas"]
+visible = false
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Titulo" type="Label" parent="Libro/Hojas/Hoja6"]
+margin_left = 76.0
+margin_top = 12.0
+margin_right = 302.0
+margin_bottom = 34.0
+rect_scale = Vector2( 2.5, 2.5 )
+text = "Comandos"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Image" type="Sprite" parent="Libro/Hojas/Hoja6"]
+position = Vector2( 365, 135 )
+scale = Vector2( 0.6, 0.6 )
+texture = ExtResource( 102 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Info" type="Label" parent="Libro/Hojas/Hoja6"]
+margin_left = 36.0
+margin_top = 199.0
+margin_right = 500.0
+margin_bottom = 354.0
+rect_scale = Vector2( 1.4, 1.4 )
+text = "Acciónes instantáneas, de izquierda a derecha:
+
+- Traer nuevo diamante, por un costo lo llamará desde el exterior
+- Manejar diamantes, ordena a civiles o soldados ir a un punto
+- Trabajo forzado, da prioridad a un diamante para que trabaje en la construcción más cercana al centro de la cámara (sonará)
+- Explosión, tiene costo, disponible luego de una explosión
+- Caos, cambia entre modo fácil y difícil, disponible al vivenciar todo"
+align = 1
+autowrap = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Hoja7" type="Control" parent="Libro/Hojas"]
+visible = false
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Titulo" type="Label" parent="Libro/Hojas/Hoja7"]
+margin_left = 76.0
+margin_top = 12.0
+margin_right = 302.0
+margin_bottom = 34.0
+rect_scale = Vector2( 2.5, 2.5 )
+text = "Calles"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Image1" type="Sprite" parent="Libro/Hojas/Hoja7"]
+position = Vector2( 191, 246 )
+texture = ExtResource( 83 )
+hframes = 26
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Image2" type="Sprite" parent="Libro/Hojas/Hoja7"]
+position = Vector2( 191, 246 )
+texture = ExtResource( 83 )
+hframes = 26
+frame = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Info" type="Label" parent="Libro/Hojas/Hoja7"]
+margin_left = 385.0
+margin_top = 100.0
+margin_right = 602.0
+margin_bottom = 309.0
+rect_scale = Vector2( 1.4, 1.4 )
+text = "Son necesarias para que los diamantes naveguen. Colóquelas con clic izquierdo. Use ese clic sostenido para conectar o desconectar calles. Ellas se conectarán automáticamente a la puerta de una edificación cercana. Use la herramienta demoledora para quitarlas. Colóquelas cerca a una mina para que los diamantes puedan tomarla"
+align = 1
+autowrap = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Titilante" type="Node" parent="Libro/Hojas/Hoja7"]
+
+[node name="Hoja8" type="Control" parent="Libro/Hojas"]
+visible = false
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Titulo" type="Label" parent="Libro/Hojas/Hoja8"]
+margin_left = 76.0
+margin_top = 12.0
+margin_right = 302.0
+margin_bottom = 34.0
+rect_scale = Vector2( 2.5, 2.5 )
+text = "Construyendo"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Image1" type="Sprite" parent="Libro/Hojas/Hoja8"]
+position = Vector2( 191, 246 )
+texture = ExtResource( 83 )
+hframes = 26
+frame = 2
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Image2" type="Sprite" parent="Libro/Hojas/Hoja8"]
+position = Vector2( 191, 246 )
+texture = ExtResource( 83 )
+hframes = 26
+frame = 3
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Info" type="Label" parent="Libro/Hojas/Hoja8"]
+margin_left = 385.0
+margin_top = 100.0
+margin_right = 602.0
+margin_bottom = 309.0
+rect_scale = Vector2( 1.4, 1.4 )
+text = "Luego de haber seleccionado una edificación, ubíquela con el mouse (se pondrá oscura si no se puede construir ahí). Use clic izquierdo para ponerla. Los diamantes irán a trabajar ahí en cualquier momento o puede forzarlos con el botón de construcción (ver Comandos). Observe el indicador de puerta de la edificación, este debe quedar cerca a un punto calle"
+align = 1
+autowrap = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Titilante" type="Node" parent="Libro/Hojas/Hoja8"]
+
+[node name="Hoja9" type="Control" parent="Libro/Hojas"]
+visible = false
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Titulo" type="Label" parent="Libro/Hojas/Hoja9"]
+margin_left = 76.0
+margin_top = 12.0
+margin_right = 302.0
+margin_bottom = 34.0
+rect_scale = Vector2( 2.5, 2.5 )
+text = "Edificio"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Image" type="Sprite" parent="Libro/Hojas/Hoja9"]
+position = Vector2( 191, 246 )
+texture = ExtResource( 83 )
+hframes = 26
+frame = 4
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Info" type="Label" parent="Libro/Hojas/Hoja9"]
+margin_left = 385.0
+margin_top = 100.0
+margin_right = 602.0
+margin_bottom = 309.0
+rect_scale = Vector2( 1.4, 1.4 )
+text = "Esta es la vivienda básica, una torre vertical donde pueden vivir (dormir) 5 diamantes. Ellos se pueden duplicar (reproducirse) cuando han cargado cristal de la mina aquí, pero deben además estar felices. La cantidad de viviendas limitará el número máximo de diamantes que puedas tener. Luego ellos usarán este lugar para resguardarse del peligro"
+align = 1
+autowrap = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Icono" type="Sprite" parent="Libro/Hojas/Hoja9"]
+position = Vector2( 200, 412 )
+scale = Vector2( 0.75, 0.75 )
+texture = ExtResource( 14 )
+hframes = 30
+frame = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Hoja10" type="Control" parent="Libro/Hojas"]
+visible = false
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Titulo" type="Label" parent="Libro/Hojas/Hoja10"]
+margin_left = 76.0
+margin_top = 12.0
+margin_right = 302.0
+margin_bottom = 34.0
+rect_scale = Vector2( 2.5, 2.5 )
+text = "Cultivo"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Image" type="Sprite" parent="Libro/Hojas/Hoja10"]
+position = Vector2( 191, 246 )
+texture = ExtResource( 83 )
+hframes = 26
+frame = 5
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Info" type="Label" parent="Libro/Hojas/Hoja10"]
+margin_left = 385.0
+margin_top = 100.0
+margin_right = 602.0
+margin_bottom = 309.0
+rect_scale = Vector2( 1.4, 1.4 )
+text = "Es el lugar donde se produce comida, no funciona en la noche. Los diamantes entrarán ahí a trabajar en cualquier momento, lo que germinará plantas de cristal y producirá botellas de alimento crudo. Este alimento puede ser ingerido directamente y comprado a bajo costo, aún así, los diamantes preferirán el alimento preparado y más costoso"
+align = 1
+autowrap = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Icono" type="Sprite" parent="Libro/Hojas/Hoja10"]
+position = Vector2( 200, 412 )
+scale = Vector2( 0.75, 0.75 )
+texture = ExtResource( 14 )
+hframes = 30
+frame = 3
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Hoja11" type="Control" parent="Libro/Hojas"]
+visible = false
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Titulo" type="Label" parent="Libro/Hojas/Hoja11"]
+margin_left = 76.0
+margin_top = 12.0
+margin_right = 302.0
+margin_bottom = 34.0
+rect_scale = Vector2( 2.5, 2.5 )
+text = "Pub Bar"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Image" type="Sprite" parent="Libro/Hojas/Hoja11"]
+position = Vector2( 191, 246 )
+texture = ExtResource( 83 )
+hframes = 26
+frame = 6
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Info" type="Label" parent="Libro/Hojas/Hoja11"]
+margin_left = 385.0
+margin_top = 100.0
+margin_right = 602.0
+margin_bottom = 309.0
+rect_scale = Vector2( 1.4, 1.4 )
+text = "La diversión es necesaria para un buen vivir, los diamantes adoran reunirse aquí a escuchar música espléndida. También comprarán alimento preparado y chucherías variadas. Esta edificación debe abastecerce con el Cultivo y la Fábrica. Se puede decir que como centro de ocio es la principal fuente de ingresos de la ciudad"
+align = 1
+autowrap = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Icono" type="Sprite" parent="Libro/Hojas/Hoja11"]
+position = Vector2( 200, 412 )
+scale = Vector2( 0.75, 0.75 )
+texture = ExtResource( 14 )
+hframes = 30
+frame = 2
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Hoja12" type="Control" parent="Libro/Hojas"]
+visible = false
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Titulo" type="Label" parent="Libro/Hojas/Hoja12"]
+margin_left = 76.0
+margin_top = 12.0
+margin_right = 302.0
+margin_bottom = 34.0
+rect_scale = Vector2( 2.5, 2.5 )
+text = "Fábrica"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Image" type="Sprite" parent="Libro/Hojas/Hoja12"]
+position = Vector2( 191, 246 )
+texture = ExtResource( 83 )
+hframes = 26
+frame = 7
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Info" type="Label" parent="Libro/Hojas/Hoja12"]
+margin_left = 385.0
+margin_top = 100.0
+margin_right = 602.0
+margin_bottom = 309.0
+rect_scale = Vector2( 1.4, 1.4 )
+text = "Lugar de trabajo altamente remunerado, produce cosas para el ocio o la guerra. Los diamantes entrarán a trabajar una vez que se disponga de cristal proveniente de alguna mina. Por lo anterior es aconsejable tener conección y cercanía con alguna mina. Es una edificación contamiinante y ruidosa"
+align = 1
+autowrap = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Icono" type="Sprite" parent="Libro/Hojas/Hoja12"]
+position = Vector2( 200, 412 )
+scale = Vector2( 0.75, 0.75 )
+texture = ExtResource( 14 )
+hframes = 30
+frame = 4
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Hoja13" type="Control" parent="Libro/Hojas"]
+visible = false
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Titulo" type="Label" parent="Libro/Hojas/Hoja13"]
+margin_left = 76.0
+margin_top = 12.0
+margin_right = 302.0
+margin_bottom = 34.0
+rect_scale = Vector2( 2.5, 2.5 )
+text = "Puerto"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Image" type="Sprite" parent="Libro/Hojas/Hoja13"]
+position = Vector2( 191, 246 )
+texture = ExtResource( 83 )
+hframes = 26
+frame = 8
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Info" type="Label" parent="Libro/Hojas/Hoja13"]
+margin_left = 385.0
+margin_top = 100.0
+margin_right = 602.0
+margin_bottom = 309.0
+rect_scale = Vector2( 1.4, 1.4 )
+text = "Los diamantes gustan de transportarse por los aires en globos. Esto ayuda a zurcar largas distancias y agua fácilmente. Para conectar o desconectar puertos, se hace lo mismo que con las calles, también hay que estar en el modo de edición de calles. Recordar que un puerto se conecta siempre a una calle, no a otro puerto"
+align = 1
+autowrap = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Icono" type="Sprite" parent="Libro/Hojas/Hoja13"]
+position = Vector2( 200, 412 )
+scale = Vector2( 0.75, 0.75 )
+texture = ExtResource( 14 )
+hframes = 30
+frame = 5
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Hoja14" type="Control" parent="Libro/Hojas"]
+visible = false
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Titulo" type="Label" parent="Libro/Hojas/Hoja14"]
+margin_left = 76.0
+margin_top = 12.0
+margin_right = 302.0
+margin_bottom = 34.0
+rect_scale = Vector2( 2.5, 2.5 )
+text = "Hospital"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Image" type="Sprite" parent="Libro/Hojas/Hoja14"]
+position = Vector2( 191, 246 )
+texture = ExtResource( 83 )
+hframes = 26
+frame = 9
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Info" type="Label" parent="Libro/Hojas/Hoja14"]
+margin_left = 385.0
+margin_top = 100.0
+margin_right = 602.0
+margin_bottom = 309.0
+rect_scale = Vector2( 1.4, 1.4 )
+text = "Lastimosamente los diamantes sufren de una enfermedad, el virus JLPM, el cuál tiene 2 variantes. Aquí se pueden tratar a los enfermos, la habitación superior es para el médico y la inferior para el paciente. Cuando hay medicinas el tratamiento es completo, estas se hacen con comida del Cultivo. También los diamantes pueden repartir medicinas por las calles"
+align = 1
+autowrap = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Icono" type="Sprite" parent="Libro/Hojas/Hoja14"]
+position = Vector2( 200, 412 )
+scale = Vector2( 0.75, 0.75 )
+texture = ExtResource( 14 )
+hframes = 30
+frame = 6
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Hoja15" type="Control" parent="Libro/Hojas"]
+visible = false
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Titulo" type="Label" parent="Libro/Hojas/Hoja15"]
+margin_left = 76.0
+margin_top = 12.0
+margin_right = 302.0
+margin_bottom = 34.0
+rect_scale = Vector2( 2.5, 2.5 )
+text = "Torre"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Image" type="Sprite" parent="Libro/Hojas/Hoja15"]
+position = Vector2( 191, 246 )
+texture = ExtResource( 83 )
+hframes = 26
+frame = 10
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Info" type="Label" parent="Libro/Hojas/Hoja15"]
+margin_left = 385.0
+margin_top = 100.0
+margin_right = 602.0
+margin_bottom = 309.0
+rect_scale = Vector2( 1.4, 1.4 )
+text = "Estructura defensiva, un diamante puede ponerse en puesto de guardia para disparar proyectiles desde la altura. También habrá soldados que se alisten en la torre y luego patrullen las calles, estos pueden disparar o atacar a melé, dependiendo de si hay munición, la cual es creada en la Fábrica. Más torres significa más soldados"
+align = 1
+autowrap = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Icono" type="Sprite" parent="Libro/Hojas/Hoja15"]
+position = Vector2( 200, 412 )
+scale = Vector2( 0.75, 0.75 )
+texture = ExtResource( 14 )
+hframes = 30
+frame = 7
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Hoja16" type="Control" parent="Libro/Hojas"]
+visible = false
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Titulo" type="Label" parent="Libro/Hojas/Hoja16"]
+margin_left = 76.0
+margin_top = 12.0
+margin_right = 302.0
+margin_bottom = 34.0
+rect_scale = Vector2( 2.5, 2.5 )
+text = "Biblioteca"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Image" type="Sprite" parent="Libro/Hojas/Hoja16"]
+position = Vector2( 191, 246 )
+texture = ExtResource( 83 )
+hframes = 26
+frame = 11
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Info" type="Label" parent="Libro/Hojas/Hoja16"]
+margin_left = 385.0
+margin_top = 100.0
+margin_right = 602.0
+margin_bottom = 309.0
+rect_scale = Vector2( 1.4, 1.4 )
+text = "A los diamantes les gusta aprender, estudiar el mundo o leer cuentos. En este lugar un maestro produce libros mientras ve por su telescopio cuántico. Los demás diamantes llegarán ahí a leer. Cabe decir que entre más intelecto acumulen los diamantes, mayor será su campo visual y realizarán tareas de trabajo con mayor eficiencia"
+align = 1
+autowrap = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Icono" type="Sprite" parent="Libro/Hojas/Hoja16"]
+position = Vector2( 200, 412 )
+scale = Vector2( 0.75, 0.75 )
+texture = ExtResource( 14 )
+hframes = 30
+frame = 8
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Hoja17" type="Control" parent="Libro/Hojas"]
+visible = false
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Titulo" type="Label" parent="Libro/Hojas/Hoja17"]
+margin_left = 76.0
+margin_top = 12.0
+margin_right = 302.0
+margin_bottom = 34.0
+rect_scale = Vector2( 2.5, 2.5 )
+text = "Gimnasio"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Image" type="Sprite" parent="Libro/Hojas/Hoja17"]
+position = Vector2( 191, 246 )
+texture = ExtResource( 83 )
+hframes = 26
+frame = 12
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Info" type="Label" parent="Libro/Hojas/Hoja17"]
+margin_left = 385.0
+margin_top = 100.0
+margin_right = 602.0
+margin_bottom = 309.0
+rect_scale = Vector2( 1.4, 1.4 )
+text = "Cuando los diamantes se ejercitan pueden caminar a mayor velocidad y conservarán la salud más fácilmente. Este lugar los mantiene en forma mediante el juego: se enfrentan 2 equipos de 2 jugadores para encestar un balón, quién haga primero 5 puntos ganará. Además de ejercitante es divertido"
+align = 1
+autowrap = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Icono" type="Sprite" parent="Libro/Hojas/Hoja17"]
+position = Vector2( 200, 412 )
+scale = Vector2( 0.75, 0.75 )
+texture = ExtResource( 14 )
+hframes = 30
+frame = 9
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Hoja18" type="Control" parent="Libro/Hojas"]
+visible = false
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Titulo" type="Label" parent="Libro/Hojas/Hoja18"]
+margin_left = 76.0
+margin_top = 12.0
+margin_right = 302.0
+margin_bottom = 34.0
+rect_scale = Vector2( 2.5, 2.5 )
+text = "Parque"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Image" type="Sprite" parent="Libro/Hojas/Hoja18"]
+position = Vector2( 191, 246 )
+texture = ExtResource( 83 )
+hframes = 26
+frame = 13
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Info" type="Label" parent="Libro/Hojas/Hoja18"]
+margin_left = 385.0
+margin_top = 100.0
+margin_right = 602.0
+margin_bottom = 309.0
+rect_scale = Vector2( 1.4, 1.4 )
+text = "Esto es una reserva natural, en torno a la rosa giratoria está prohibido construir y solo una calle puede hacer conección automática. En dicha área crecerán árboles y flores, aparecerán las tortugas silvestres y los diamantes darán paseos de descanso. Lo que hacen ellos en este lugar es aún especulativo, se dice que consumen flores alucinógenas"
+align = 1
+autowrap = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Icono" type="Sprite" parent="Libro/Hojas/Hoja18"]
+position = Vector2( 200, 412 )
+scale = Vector2( 0.75, 0.75 )
+texture = ExtResource( 14 )
+hframes = 30
+frame = 10
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Hoja19" type="Control" parent="Libro/Hojas"]
+visible = false
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Titulo" type="Label" parent="Libro/Hojas/Hoja19"]
+margin_left = 76.0
+margin_top = 12.0
+margin_right = 302.0
+margin_bottom = 34.0
+rect_scale = Vector2( 2.5, 2.5 )
+text = "Monumento"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Image" type="Sprite" parent="Libro/Hojas/Hoja19"]
+position = Vector2( 191, 246 )
+texture = ExtResource( 83 )
+hframes = 26
+frame = 14
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Info" type="Label" parent="Libro/Hojas/Hoja19"]
+margin_left = 385.0
+margin_top = 100.0
+margin_right = 602.0
+margin_bottom = 309.0
+rect_scale = Vector2( 1.4, 1.4 )
+text = "O también centro urbano, costoso y solo puede haber uno a la vez. Aquí vienen los diamantes a protestar, uno que otro se sube al monumento a gobernar por un tiempo. En esta edificación se ve cuál es la necesidad promedio de todos los protestantes, así se sabrá cómo calmarles"
+align = 1
+autowrap = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Icono" type="Sprite" parent="Libro/Hojas/Hoja19"]
+position = Vector2( 200, 412 )
+scale = Vector2( 0.75, 0.75 )
+texture = ExtResource( 14 )
+hframes = 30
+frame = 11
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Hoja20" type="Control" parent="Libro/Hojas"]
+visible = false
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Titulo" type="Label" parent="Libro/Hojas/Hoja20"]
+margin_left = 76.0
+margin_top = 12.0
+margin_right = 302.0
+margin_bottom = 34.0
+rect_scale = Vector2( 2.5, 2.5 )
+text = "Demolisión"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Image" type="Sprite" parent="Libro/Hojas/Hoja20"]
+position = Vector2( 191, 246 )
+texture = ExtResource( 83 )
+hframes = 26
+frame = 15
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Info" type="Label" parent="Libro/Hojas/Hoja20"]
+margin_left = 385.0
+margin_top = 100.0
+margin_right = 602.0
+margin_bottom = 309.0
+rect_scale = Vector2( 1.4, 1.4 )
+text = "La herramienta para demoler (martillo), lo hace a cambio de un costo. Puede convertir edificaciónes en proyectos de demolisión, calles en polvo o cambiar el estado de los proyectos de demolisión a construcción"
+align = 1
+autowrap = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Hoja21" type="Control" parent="Libro/Hojas"]
+visible = false
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Titulo" type="Label" parent="Libro/Hojas/Hoja21"]
+margin_left = 76.0
+margin_top = 12.0
+margin_right = 302.0
+margin_bottom = 34.0
+rect_scale = Vector2( 2.5, 2.5 )
+text = "Traer Nuevo Diamante"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Image1" type="Sprite" parent="Libro/Hojas/Hoja21"]
+position = Vector2( 191, 246 )
+texture = ExtResource( 83 )
+hframes = 26
+frame = 16
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Image2" type="Sprite" parent="Libro/Hojas/Hoja21"]
+position = Vector2( 537, 379 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 102 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Info" type="Label" parent="Libro/Hojas/Hoja21"]
+margin_left = 385.0
+margin_top = 100.0
+margin_right = 602.0
+margin_bottom = 309.0
+rect_scale = Vector2( 1.4, 1.4 )
+text = "Recuerda que en cualquier momento y a cambio de dinero, puedes convocar a un nuevo diamante que vendrá volando desde el exterior. Llegará a algún lugar que alcance a ver la cámara
+
+(Botón a la izquierda)"
+align = 1
+autowrap = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Hoja22" type="Control" parent="Libro/Hojas"]
+visible = false
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Titulo" type="Label" parent="Libro/Hojas/Hoja22"]
+margin_left = 76.0
+margin_top = 12.0
+margin_right = 302.0
+margin_bottom = 34.0
+rect_scale = Vector2( 2.5, 2.5 )
+text = "Manejar Diamantes"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Image1" type="Sprite" parent="Libro/Hojas/Hoja22"]
+position = Vector2( 191, 246 )
+texture = ExtResource( 83 )
+hframes = 26
+frame = 17
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Image2" type="Sprite" parent="Libro/Hojas/Hoja22"]
+position = Vector2( 537, 379 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 102 )
+__meta__ = {
+"_edit_lock_": true,
+"_editor_description_": ""
+}
+
+[node name="Info" type="Label" parent="Libro/Hojas/Hoja22"]
+margin_left = 385.0
+margin_top = 92.0
+margin_right = 602.0
+margin_bottom = 301.0
+rect_scale = Vector2( 1.4, 1.4 )
+text = "Con el segundo botón obtienes la herramienta de comando, da clic izquierdo en el lugar a ir. Los diamantes en el radio acudirán siempre y cuando no protesten. Con la tecla Shift cambias la órden para civiles o soldados. Con la tecla Ctrl pulsada llamas a desocupados"
+align = 1
+autowrap = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Hoja23" type="Control" parent="Libro/Hojas"]
+visible = false
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Titulo" type="Label" parent="Libro/Hojas/Hoja23"]
+margin_left = 76.0
+margin_top = 12.0
+margin_right = 302.0
+margin_bottom = 34.0
+rect_scale = Vector2( 2.5, 2.5 )
+text = "Explosión"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Image1" type="Sprite" parent="Libro/Hojas/Hoja23"]
+position = Vector2( 191, 246 )
+texture = ExtResource( 83 )
+hframes = 26
+frame = 18
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Image2" type="Sprite" parent="Libro/Hojas/Hoja23"]
+position = Vector2( 191, 246 )
+texture = ExtResource( 83 )
+hframes = 26
+frame = 19
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Image3" type="Sprite" parent="Libro/Hojas/Hoja23"]
+position = Vector2( 537, 379 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 102 )
+__meta__ = {
+"_edit_lock_": true,
+"_editor_description_": ""
+}
+
+[node name="Info" type="Label" parent="Libro/Hojas/Hoja23"]
+margin_left = 385.0
+margin_top = 100.0
+margin_right = 602.0
+margin_bottom = 309.0
+rect_scale = Vector2( 1.4, 1.4 )
+text = "El cuarto botón da la herramienta de explosiónes. Se requiere que suceda una explosión naturalmente para activarla. Entonces a cambio de un costo darás clic donde desees ponerla, golpea a los diamantes y enemigos por igual"
+align = 1
+autowrap = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Titilante" type="Node" parent="Libro/Hojas/Hoja23"]
+
+[node name="Hoja24" type="Control" parent="Libro/Hojas"]
+visible = false
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Titulo" type="Label" parent="Libro/Hojas/Hoja24"]
+margin_left = 76.0
+margin_top = 12.0
+margin_right = 302.0
+margin_bottom = 34.0
+rect_scale = Vector2( 2.5, 2.5 )
+text = "JasperDev"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Image1" type="Sprite" parent="Libro/Hojas/Hoja24"]
+position = Vector2( 191, 246 )
+texture = ExtResource( 83 )
+hframes = 26
+frame = 20
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Image2" type="Sprite" parent="Libro/Hojas/Hoja24"]
+position = Vector2( 191, 246 )
+texture = ExtResource( 83 )
+hframes = 26
+frame = 21
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Info" type="Label" parent="Libro/Hojas/Hoja24"]
+margin_left = 385.0
+margin_top = 100.0
+margin_right = 602.0
+margin_bottom = 309.0
+rect_scale = Vector2( 1.4, 1.4 )
+text = "Cuando los diamantes acumulan mucha tristeza por falta de ocio, se convierten en diamantes pintados de mapache púrpura revelde. Este no paga impuestos ni obedece órdenes, es todo un lío para la ciudad. Más cuando se pone psicótico y quiere explotar todo con una bomba"
+align = 1
+autowrap = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Titilante" type="Node" parent="Libro/Hojas/Hoja24"]
+
+[node name="Hoja25" type="Control" parent="Libro/Hojas"]
+visible = false
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Titulo" type="Label" parent="Libro/Hojas/Hoja25"]
+margin_left = 76.0
+margin_top = 12.0
+margin_right = 302.0
+margin_bottom = 34.0
+rect_scale = Vector2( 2.5, 2.5 )
+text = "S-Dev"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Image" type="Sprite" parent="Libro/Hojas/Hoja25"]
+position = Vector2( 191, 246 )
+texture = ExtResource( 83 )
+hframes = 26
+frame = 22
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Info" type="Label" parent="Libro/Hojas/Hoja25"]
+margin_left = 385.0
+margin_top = 100.0
+margin_right = 602.0
+margin_bottom = 309.0
+rect_scale = Vector2( 1.4, 1.4 )
+text = "Cuando la ciudad es prospera respecto a mercancías y comida producidas, aparece un agujero en el suelo. Ahí brotan estos oscuros seres, quienes tienen por finalidad tomar las riquezas y guardarlas en su cueva. Aunque son inofensivos para el ciudadano, dan duros golpes económicos y a veces golpean literalmente a los soldados"
+align = 1
+autowrap = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Hoja26" type="Control" parent="Libro/Hojas"]
+visible = false
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Titulo" type="Label" parent="Libro/Hojas/Hoja26"]
+margin_left = 76.0
+margin_top = 12.0
+margin_right = 302.0
+margin_bottom = 34.0
+rect_scale = Vector2( 2.5, 2.5 )
+text = "Guinxu"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Image" type="Sprite" parent="Libro/Hojas/Hoja26"]
+position = Vector2( 191, 246 )
+texture = ExtResource( 83 )
+hframes = 26
+frame = 23
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Info" type="Label" parent="Libro/Hojas/Hoja26"]
+margin_left = 385.0
+margin_top = 100.0
+margin_right = 602.0
+margin_bottom = 309.0
+rect_scale = Vector2( 1.4, 1.4 )
+text = "Un antiguo archienemigo de los diamantes, llegan en grupo en globos y atacan sin discreción. Lo único que se sabe es que procuran disminuir la cantidad de diamantes, por lo que solo se contenta cuando varios yacen muertos. Y para colmo toma sus coronas como trofeo"
+align = 1
+autowrap = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Hoja27" type="Control" parent="Libro/Hojas"]
+visible = false
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Titulo" type="Label" parent="Libro/Hojas/Hoja27"]
+margin_left = 76.0
+margin_top = 12.0
+margin_right = 302.0
+margin_bottom = 34.0
+rect_scale = Vector2( 2.5, 2.5 )
+text = "Alva Majo"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Image" type="Sprite" parent="Libro/Hojas/Hoja27"]
+position = Vector2( 191, 246 )
+texture = ExtResource( 83 )
+hframes = 26
+frame = 24
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Info" type="Label" parent="Libro/Hojas/Hoja27"]
+margin_left = 385.0
+margin_top = 100.0
+margin_right = 602.0
+margin_bottom = 309.0
+rect_scale = Vector2( 1.4, 1.4 )
+text = "Para los diamantes esto es una pesadilla, un monstruo titánico del tamaño de un edificio. Y en efecto puede derribar edificaciónes. A su paso los civiles son aplastados si se descuidan, los árboles derribados y el agua no es un impedimento a su avance. Lo más destacable es su ímpia risa brujeril"
+align = 1
+autowrap = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Hoja28" type="Control" parent="Libro/Hojas"]
+visible = false
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Titulo" type="Label" parent="Libro/Hojas/Hoja28"]
+margin_left = 76.0
+margin_top = 12.0
+margin_right = 302.0
+margin_bottom = 34.0
+rect_scale = Vector2( 2.5, 2.5 )
+text = "Pandemia JLPM"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Image" type="Sprite" parent="Libro/Hojas/Hoja28"]
+position = Vector2( 191, 246 )
+texture = ExtResource( 83 )
+hframes = 26
+frame = 25
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Info" type="Label" parent="Libro/Hojas/Hoja28"]
+margin_left = 385.0
+margin_top = 100.0
+margin_right = 602.0
+margin_bottom = 309.0
+rect_scale = Vector2( 1.4, 1.4 )
+text = "La variante más fuerte del virus JLPM es altamente contagiosa, cuando se riega por la ciudad el comportamiento de su propagación es complejo. Se debe mitigar con buen servicio de salud, una población ejercitada y aíslar las  zonas distantes de la ciudad"
+align = 1
+autowrap = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Hoja29" type="Control" parent="Libro/Hojas"]
+visible = false
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Titulo" type="Label" parent="Libro/Hojas/Hoja29"]
+margin_left = 76.0
+margin_top = 12.0
+margin_right = 302.0
+margin_bottom = 34.0
+rect_scale = Vector2( 2.5, 2.5 )
+text = "Diamante"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Info1" type="Label" parent="Libro/Hojas/Hoja29"]
+margin_left = 19.0
+margin_top = 116.0
+margin_right = 222.0
+margin_bottom = 308.0
+rect_scale = Vector2( 1.4, 1.4 )
+text = "Una criatura peculiar creada por DEValen, su comportamiento se rige por las siguientes necesidades: seguridad (miedo), energía (sueño), salud (enfermedad), alimento (hambre), diversión (estrés), dinero (desempleo), socialización (soledad), físico (lentitud) e intelecto (ceguera)"
+align = 1
+autowrap = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Info2" type="Label" parent="Libro/Hojas/Hoja29"]
+margin_left = 400.0
+margin_top = 111.0
+margin_right = 610.0
+margin_bottom = 309.0
+rect_scale = Vector2( 1.4, 1.4 )
+text = "Algunos dan prioridad al físico y otros al intelecto, esto es heredable y mutable. Sus actividades son: andar, cargar cosas, comer, esconderse, escribir, leer, jugar, soldado, cultivar, minar, trabajar en fábrica, protestar, medico, paciente, construir, demoler, comprar, dormir, charlar, hippiar en el parque, errar"
+align = 1
+autowrap = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Diamante" type="Node2D" parent="Libro/Hojas/Hoja29"]
+position = Vector2( 349, 153 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="PieL" type="Sprite" parent="Libro/Hojas/Hoja29/Diamante"]
+position = Vector2( 0, -3 )
+texture = ExtResource( 84 )
+centered = false
+offset = Vector2( -58, -98 )
+hframes = 15
+frame = 2
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="PieR" type="Sprite" parent="Libro/Hojas/Hoja29/Diamante"]
+position = Vector2( -2, -3 )
+texture = ExtResource( 84 )
+centered = false
+offset = Vector2( -58, -98 )
+hframes = 15
+frame = 3
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Cuerpo" type="Sprite" parent="Libro/Hojas/Hoja29/Diamante"]
+texture = ExtResource( 84 )
+centered = false
+offset = Vector2( -58, -98 )
+hframes = 15
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Corona" type="Sprite" parent="Libro/Hojas/Hoja29/Diamante"]
+texture = ExtResource( 84 )
+centered = false
+offset = Vector2( -58, -98 )
+hframes = 15
+frame = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Hoja30" type="Control" parent="Libro/Hojas"]
+visible = false
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Titulo" type="Label" parent="Libro/Hojas/Hoja30"]
+margin_left = 76.0
+margin_top = 12.0
+margin_right = 302.0
+margin_bottom = 34.0
+rect_scale = Vector2( 2.5, 2.5 )
+text = "Guardar Partida"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Image" type="Sprite" parent="Libro/Hojas/Hoja30"]
+position = Vector2( 341, 332 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 86 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Info" type="Label" parent="Libro/Hojas/Hoja30"]
+margin_left = 35.0
+margin_top = 93.0
+margin_right = 497.0
+margin_bottom = 201.0
+rect_scale = Vector2( 1.4, 1.4 )
+text = "Cada que pasa un día para los diamantes, el juego es automáticamente guardado, también se guarda cuando sales al menú principal o cierras el software. Cuando quieras continuar con la partida previa pulsa Continuar en el menú. Si inicias una Nueva partida, al cabo de 1 día será eliminada la previa. Puedes guardar (y compartir) tu ciudad si la Exportas como un archivo"
+align = 1
+autowrap = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[connection signal="visibility_changed" from="." to="." method="_on_GUI_visibility_changed"]
+[connection signal="button_down" from="Opciones/BSeguidor" to="." method="_on_BSeguidor_button_down"]
+[connection signal="button_down" from="Opciones/BScreenshot" to="." method="_on_BScreenshot_button_down"]
+[connection signal="button_down" from="Opciones/BSpeedOff" to="." method="_on_BSpeedOff_button_down"]
+[connection signal="button_down" from="Opciones/BSpeedOn" to="." method="_on_BSpeedOn_button_down"]
+[connection signal="button_down" from="Opciones/BEyeOff" to="." method="_on_BEyeOff_button_down"]
+[connection signal="button_down" from="Opciones/BEyeOn" to="." method="_on_BEyeOn_button_down"]
+[connection signal="button_down" from="Opciones/BInfo" to="." method="_on_BInfo_button_down"]
+[connection signal="gui_input" from="Minimapa/MaskMap" to="." method="_on_MaskMap_gui_input"]
+[connection signal="button_down" from="Buildings/BCalle" to="." method="_on_BCalle_button_down"]
+[connection signal="mouse_entered" from="Buildings/BCalle" to="." method="_on_BCalle_mouse_entered"]
+[connection signal="mouse_exited" from="Buildings/BCalle" to="." method="_on_BCalle_mouse_exited"]
+[connection signal="button_down" from="Buildings/BEdificio" to="." method="_on_BEdificio_button_down"]
+[connection signal="mouse_entered" from="Buildings/BEdificio" to="." method="_on_BEdificio_mouse_entered"]
+[connection signal="mouse_exited" from="Buildings/BEdificio" to="." method="_on_BEdificio_mouse_exited"]
+[connection signal="button_down" from="Buildings/BOcio" to="." method="_on_BOcio_button_down"]
+[connection signal="mouse_entered" from="Buildings/BOcio" to="." method="_on_BOcio_mouse_entered"]
+[connection signal="mouse_exited" from="Buildings/BOcio" to="." method="_on_BOcio_mouse_exited"]
+[connection signal="button_down" from="Buildings/BCultivo" to="." method="_on_BCultivo_button_down"]
+[connection signal="mouse_entered" from="Buildings/BCultivo" to="." method="_on_BCultivo_mouse_entered"]
+[connection signal="mouse_exited" from="Buildings/BCultivo" to="." method="_on_BCultivo_mouse_exited"]
+[connection signal="button_down" from="Buildings/BTrabajo" to="." method="_on_BTrabajo_button_down"]
+[connection signal="mouse_entered" from="Buildings/BTrabajo" to="." method="_on_BTrabajo_mouse_entered"]
+[connection signal="mouse_exited" from="Buildings/BTrabajo" to="." method="_on_BTrabajo_mouse_exited"]
+[connection signal="button_down" from="Buildings/BPuerto" to="." method="_on_BPuerto_button_down"]
+[connection signal="mouse_entered" from="Buildings/BPuerto" to="." method="_on_BPuerto_mouse_entered"]
+[connection signal="mouse_exited" from="Buildings/BPuerto" to="." method="_on_BPuerto_mouse_exited"]
+[connection signal="button_down" from="Buildings/BHospital" to="." method="_on_BHospital_button_down"]
+[connection signal="mouse_entered" from="Buildings/BHospital" to="." method="_on_BHospital_mouse_entered"]
+[connection signal="mouse_exited" from="Buildings/BHospital" to="." method="_on_BHospital_mouse_exited"]
+[connection signal="button_down" from="Buildings/BTorre" to="." method="_on_BTorre_button_down"]
+[connection signal="mouse_entered" from="Buildings/BTorre" to="." method="_on_BTorre_mouse_entered"]
+[connection signal="mouse_exited" from="Buildings/BTorre" to="." method="_on_BTorre_mouse_exited"]
+[connection signal="button_down" from="Buildings/BEstudio" to="." method="_on_BEstudio_button_down"]
+[connection signal="mouse_entered" from="Buildings/BEstudio" to="." method="_on_BEstudio_mouse_entered"]
+[connection signal="mouse_exited" from="Buildings/BEstudio" to="." method="_on_BEstudio_mouse_exited"]
+[connection signal="button_down" from="Buildings/BJuego" to="." method="_on_BJuego_button_down"]
+[connection signal="mouse_entered" from="Buildings/BJuego" to="." method="_on_BJuego_mouse_entered"]
+[connection signal="mouse_exited" from="Buildings/BJuego" to="." method="_on_BJuego_mouse_exited"]
+[connection signal="button_down" from="Buildings/BParque" to="." method="_on_BParque_button_down"]
+[connection signal="mouse_entered" from="Buildings/BParque" to="." method="_on_BParque_mouse_entered"]
+[connection signal="mouse_exited" from="Buildings/BParque" to="." method="_on_BParque_mouse_exited"]
+[connection signal="button_down" from="Buildings/BCentro" to="." method="_on_BCentro_button_down"]
+[connection signal="mouse_entered" from="Buildings/BCentro" to="." method="_on_BCentro_mouse_entered"]
+[connection signal="mouse_exited" from="Buildings/BCentro" to="." method="_on_BCentro_mouse_exited"]
+[connection signal="button_down" from="Buildings/BDemolision" to="." method="_on_BDemolision_button_down"]
+[connection signal="mouse_entered" from="Buildings/BDemolision" to="." method="_on_BDemolision_mouse_entered"]
+[connection signal="mouse_exited" from="Buildings/BDemolision" to="." method="_on_BDemolision_mouse_exited"]
+[connection signal="button_down" from="Ordenes/BNacer" to="." method="_on_BNacer_button_down"]
+[connection signal="mouse_entered" from="Ordenes/BNacer" to="." method="_on_BNacer_mouse_entered"]
+[connection signal="mouse_exited" from="Ordenes/BNacer" to="." method="_on_BNacer_mouse_exited"]
+[connection signal="button_down" from="Ordenes/BComando" to="." method="_on_BComando_button_down"]
+[connection signal="button_down" from="Ordenes/BObreros" to="." method="_on_BObreros_button_down"]
+[connection signal="button_down" from="Ordenes/BDinamita" to="." method="_on_BDinamita_button_down"]
+[connection signal="mouse_entered" from="Ordenes/BDinamita" to="." method="_on_BDinamita_mouse_entered"]
+[connection signal="mouse_exited" from="Ordenes/BDinamita" to="." method="_on_BDinamita_mouse_exited"]
+[connection signal="button_down" from="Ordenes/BCaos" to="." method="_on_BCaos_button_down"]
+[connection signal="button_down" from="Ordenes/BLores" to="." method="_on_BLores_button_down"]
+[connection signal="gui_input" from="SubLibro" to="." method="_on_SubLibro_gui_input"]
+[connection signal="file_selected" from="FileDialog" to="." method="_on_FileDialog_file_selected"]
+[connection signal="timeout" from="Stadistics" to="." method="_on_Stadistics_timeout"]
+[connection signal="timeout" from="TimProtektor" to="." method="_on_TimProtektor_timeout"]
+[connection signal="timeout" from="Cientifik" to="." method="_on_Cientifik_timeout"]
+[connection signal="timeout" from="Rtooltip" to="." method="_on_Rtooltip_timeout"]
+[connection signal="timeout" from="LibroTime" to="." method="_on_LibroTime_timeout"]
+[connection signal="button_down" from="Libro/Siguiente" to="." method="_on_Siguiente_button_down"]
+[connection signal="button_down" from="Libro/Anterior" to="." method="_on_Anterior_button_down"]
+[connection signal="toggled" from="Libro/Pausador" to="." method="_on_Pausador_toggled"]
+[connection signal="button_down" from="Libro/Hojas/Hoja1/Next" to="." method="_on_Next_button_down"]

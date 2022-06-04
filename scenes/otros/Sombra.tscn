@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://sprites/d_sombra.png" type="Texture" id=1]
+
+[node name="Sombra" type="Sprite" groups=["imagen"]]
+texture = ExtResource( 1 )

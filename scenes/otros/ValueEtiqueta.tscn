@@ -1,0 +1,32 @@
+[gd_scene format=2]
+
+[node name="Value" type="Node2D"]
+visible = false
+position = Vector2( -22, -18 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Fondito" type="Panel" parent="."]
+margin_left = -105.0
+margin_top = -46.0
+margin_right = 6.0
+margin_bottom = 3.0
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Valor" type="Label" parent="."]
+margin_left = -106.0
+margin_top = -47.0
+margin_right = -50.0
+margin_bottom = -21.0
+rect_scale = Vector2( 2, 2 )
+text = "$0"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}

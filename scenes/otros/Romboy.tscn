@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://sprites/d_daok_baldozas_strip4.png" type="Texture" id=1]
+
+[node name="Romboy" type="Node2D" groups=["imagen"]]
+
+[node name="Rombo" type="Sprite" parent="."]
+self_modulate = Color( 1, 1, 1, 0.784314 )
+texture = ExtResource( 1 )
+offset = Vector2( 11, -2 )
+hframes = 4
+frame = 3
+__meta__ = {
+"_editor_description_": ""
+}
